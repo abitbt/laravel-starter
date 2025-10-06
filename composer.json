@@ -2,7 +2,7 @@
     "$schema": "https://getcomposer.org/schema.json",
     "name": "abitbt/laravel-starter",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "Laravel 12 starter kit with Fortify auth and Bootstrap 5 Tabler UI.",
     "keywords": [
         "laravel",
         "framework"

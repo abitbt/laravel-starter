@@ -1,5 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/package.json",
+    "description": "Laravel 12 starter kit with Fortify auth and Bootstrap 5 Tabler UI.",
     "private": true,
     "type": "module",
     "scripts": {

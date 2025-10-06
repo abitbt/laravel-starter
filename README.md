@@ -1,6 +1,6 @@
 # Laravel Starter
 
-A modern Laravel 12 starter template with authentication, elegant UI, and developer tools pre-configured for rapid application development.
+Laravel 12 starter kit with Fortify authentication and a Bootstrap 5 Tabler UI—preconfigured for rapid development, testing, and deployment.
 
 ## Features
 
