@@ -1,0 +1,85 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  pint:
+    runs-on: ubuntu-latest
+    name: Laravel Pint (PHP Code Style)
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv
+          coverage: none
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-interaction --no-progress
+
+      - name: Run Laravel Pint
+        run: vendor/bin/pint --test
+
+  prettier:
+    runs-on: ubuntu-latest
+    name: Prettier (JS/CSS/Blade Code Style)
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Prettier Check
+        run: npm run format:check
+
+  phpstan:
+    runs-on: ubuntu-latest
+    name: PHPStan (Static Analysis)
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv
+          coverage: none
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-interaction --no-progress
+
+      - name: Create phpstan.neon if not exists
+        run: |
+          if [ ! -f phpstan.neon ]; then
+            echo "includes:" > phpstan.neon
+            echo "    - vendor/larastan/larastan/extension.neon" >> phpstan.neon
+            echo "" >> phpstan.neon
+            echo "parameters:" >> phpstan.neon
+            echo "    paths:" >> phpstan.neon
+            echo "        - app" >> phpstan.neon
+            echo "    level: 5" >> phpstan.neon
+            echo "    ignoreErrors:" >> phpstan.neon
+            echo "        - '#Unsafe usage of new static#'" >> phpstan.neon
+          fi
+
+      - name: Run PHPStan
+        run: ./vendor/bin/phpstan analyse --memory-limit=2G
+        continue-on-error: true

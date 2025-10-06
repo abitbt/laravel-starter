@@ -1,0 +1,24 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Build outputs
+/public/build
+/public/hot
+/public/storage
+
+# Compiled files
+*.min.js
+*.min.css
+
+# Cache
+/bootstrap/cache
+/storage
+
+# IDE
+.vscode
+.idea
+
+# Misc
+*.log
+.DS_Store

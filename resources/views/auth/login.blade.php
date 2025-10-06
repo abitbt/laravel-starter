@@ -3,48 +3,48 @@
 @section('title', 'Login')
 
 @section('content')
-<div class="text-center mb-4">
+  <div class="mb-4 text-center">
     <a href="/" class="navbar-brand navbar-brand-autodark">{{ config('app.name') }}</a>
-</div>
-<div class="card card-md">
+  </div>
+  <div class="card card-md">
     <div class="card-body">
-        <h2 class="h2 text-center mb-4">Login to your account</h2>
-        <form action="{{ route('login') }}" method="POST">
-            @csrf
-            <div class="mb-3">
-                <label class="form-label">Email address</label>
-                <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" 
-                       placeholder="your@email.com" value="{{ old('email') }}" required autofocus>
-                @error('email')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                @enderror
-            </div>
-            <div class="mb-2">
-                <label class="form-label">
-                    Password
-                    <span class="form-label-description">
-                        <a href="{{ route('password.request') }}">Forgot password?</a>
-                    </span>
-                </label>
-                <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" 
-                       placeholder="Your password" required>
-                @error('password')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                @enderror
-            </div>
-            <div class="mb-2">
-                <label class="form-check">
-                    <input type="checkbox" name="remember" class="form-check-input"/>
-                    <span class="form-check-label">Remember me</span>
-                </label>
-            </div>
-            <div class="form-footer">
-                <button type="submit" class="btn btn-primary w-100">Sign in</button>
-            </div>
-        </form>
+      <h2 class="h2 mb-4 text-center">Login to your account</h2>
+      <form action="{{ route('login') }}" method="POST">
+        @csrf
+        <div class="mb-3">
+          <label class="form-label">Email address</label>
+          <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
+            placeholder="your@email.com" value="{{ old('email') }}" required autofocus>
+          @error('email')
+            <div class="invalid-feedback">{{ $message }}</div>
+          @enderror
+        </div>
+        <div class="mb-2">
+          <label class="form-label">
+            Password
+            <span class="form-label-description">
+              <a href="{{ route('password.request') }}">Forgot password?</a>
+            </span>
+          </label>
+          <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
+            placeholder="Your password" required>
+          @error('password')
+            <div class="invalid-feedback">{{ $message }}</div>
+          @enderror
+        </div>
+        <div class="mb-2">
+          <label class="form-check">
+            <input type="checkbox" name="remember" class="form-check-input" />
+            <span class="form-check-label">Remember me</span>
+          </label>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn btn-primary w-100">Sign in</button>
+        </div>
+      </form>
     </div>
-</div>
-<div class="text-center text-secondary mt-3">
+  </div>
+  <div class="text-secondary mt-3 text-center">
     Don't have account yet? <a href="{{ route('register') }}" tabindex="-1">Sign up</a>
-</div>
+  </div>
 @endsection

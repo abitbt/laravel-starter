@@ -1,5 +1,5 @@
 {{-- Breadcrumbs Partial --}}
-@if(isset($breadcrumbs) && count($breadcrumbs) > 0)
+@if (isset($breadcrumbs) && count($breadcrumbs) > 0)
   <div class="page-header d-print-none">
     <div class="container-xl">
       <div class="row align-items-center">
@@ -12,8 +12,8 @@
                   Home
                 </a>
               </li>
-              @foreach($breadcrumbs as $breadcrumb)
-                @if(!$loop->last)
+              @foreach ($breadcrumbs as $breadcrumb)
+                @if (!$loop->last)
                   <li class="breadcrumb-item">
                     <a href="{{ $breadcrumb['url'] }}">{{ $breadcrumb['title'] }}</a>
                   </li>

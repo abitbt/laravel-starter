@@ -1,88 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Form elements - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
-    <!-- BEGIN PAGE LEVEL STYLES -->
-    <!-- END PAGE LEVEL STYLES -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-  </head>
-  <body>
-    <a href="#content" class="visually-hidden skip-link">Skip to main content</a>
-    <div class="page">
-      @include('samples.includes.header')
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Form elements - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
+  </title>
+  <!-- BEGIN PAGE LEVEL STYLES -->
+  <!-- END PAGE LEVEL STYLES -->
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+
+<body>
+  <a href="#content" class="visually-hidden skip-link">Skip to main content</a>
+  <div class="page">
+    @include('samples.includes.header')
     @include('samples.includes.navbar')
-      <div class="page-wrapper">
-        <!-- BEGIN PAGE HEADER -->
-        <!-- BEGIN PAGE HEADER -->
-        <div class="page-header d-print-none">
-          <div class="container-xl">
-            <div class="row g-2 align-items-center">
-              <div class="col">
-                <h1 class="page-title">Form elements</h1>
-              </div>
+    <div class="page-wrapper">
+      <!-- BEGIN PAGE HEADER -->
+      <!-- BEGIN PAGE HEADER -->
+      <div class="page-header d-print-none">
+        <div class="container-xl">
+          <div class="row g-2 align-items-center">
+            <div class="col">
+              <h1 class="page-title">Form elements</h1>
             </div>
           </div>
         </div>
-        <!-- END PAGE HEADER -->
-        <!-- END PAGE HEADER -->
-        <!-- BEGIN PAGE BODY -->
-        <main id="content" class="page-body">
-          <div class="container-xl">
-            <div class="row row-cards">
-              <div class="col-12">
-                <form action="https://httpbin.org/post" method="post" class="card">
-                  <div class="card-header">
-                    <h4 class="card-title">Form elements</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row g-5">
-                      <div class="col-xl-4">
-                        <div class="row">
-                          <div class="col-md-6 col-xl-12">
-                            <div class="mb-3">
-                              <label class="form-label">Static</label>
-                              <div class="form-control-plaintext">Input value</div>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Text</label>
-                              <input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder" />
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Password</label>
-                              <input type="text" class="form-control" name="example-password-input" placeholder="Input placeholder" />
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Disabled</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                name="example-disabled-input"
-                                placeholder="Disabled..."
-                                value="Well, she turned me into a newt."
-                                disabled
-                              />
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Readonly</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                name="example-disabled-input"
-                                placeholder="Readonly..."
-                                value="Well, how'd you become king, then?"
-                                readonly
-                              />
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label required">Required</label>
-                              <input type="text" class="form-control" name="example-required-input" placeholder="Required..." />
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Textarea <span class="form-label-description">56/100</span></label>
-                              <textarea class="form-control" name="example-textarea-input" rows="6" placeholder="Content..">
+      </div>
+      <!-- END PAGE HEADER -->
+      <!-- END PAGE HEADER -->
+      <!-- BEGIN PAGE BODY -->
+      <main id="content" class="page-body">
+        <div class="container-xl">
+          <div class="row row-cards">
+            <div class="col-12">
+              <form action="https://httpbin.org/post" method="post" class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Form elements</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row g-5">
+                    <div class="col-xl-4">
+                      <div class="row">
+                        <div class="col-md-6 col-xl-12">
+                          <div class="mb-3">
+                            <label class="form-label">Static</label>
+                            <div class="form-control-plaintext">Input value</div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Text</label>
+                            <input type="text" class="form-control" name="example-text-input"
+                              placeholder="Input placeholder" />
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="text" class="form-control" name="example-password-input"
+                              placeholder="Input placeholder" />
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Disabled</label>
+                            <input type="text" class="form-control" name="example-disabled-input"
+                              placeholder="Disabled..." value="Well, she turned me into a newt." disabled />
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Readonly</label>
+                            <input type="text" class="form-control" name="example-disabled-input"
+                              placeholder="Readonly..." value="Well, how'd you become king, then?" readonly />
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label required">Required</label>
+                            <input type="text" class="form-control" name="example-required-input"
+                              placeholder="Required..." />
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Textarea <span
+                                class="form-label-description">56/100</span></label>
+                            <textarea class="form-control" name="example-textarea-input" rows="6" placeholder="Content..">
 Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! We shall say 'Ni' again to you, if you do not appease us. I'm not a witch. I'm not a witch. Camelot!</textarea
                               >
                             </div>
@@ -287,7 +282,7 @@ Oh! Come and see the violence inherent in the system! Help, help, I'm being repr
                                 <div class="col">
                                   <input type="text" class="form-control" placeholder="Search for…" />
                                 </div>
-                                <div class="col-auto align-self-center">
+                                <div class="align-self-center col-auto">
                                   <span
                                     class="form-help"
                                     data-bs-toggle="popover"
@@ -373,7 +368,7 @@ Oh! Come and see the violence inherent in the system! Help, help, I'm being repr
                             <div class="mb-3">
                               <label class="form-label">Input with appended text</label>
                               <div class="input-group input-group-flat">
-                                <input type="text" class="form-control text-end pe-0" value="yourfancydomain" autocomplete="off" />
+                                <input type="text" class="form-control pe-0 text-end" value="yourfancydomain" autocomplete="off" />
                                 <span class="input-group-text"> .tabler.io </span>
                               </div>
                             </div>
@@ -445,7 +440,7 @@ Oh! Come and see the violence inherent in the system! Help, help, I'm being repr
                                       <path d="M18 4v1" />
                                       <path d="M18 9v11" /></svg
                                   ></a>
-                                  <a href="#" class="link-secondary ms-2 disabled" title="Add notification" data-bs-toggle="tooltip"
+                                  <a href="#" class="link-secondary disabled ms-2" title="Add notification" data-bs-toggle="tooltip"
                                     ><!-- Download SVG icon from http://tabler.io/icons/icon/bell -->
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
@@ -736,7 +731,7 @@ Oh! Come and see the violence inherent in the system! Help, help, I'm being repr
                                 <div class="col-auto">
                                   <label class="form-colorinput form-colorinput-light">
                                     <input name="color-rounded" type="radio" value="white" class="form-colorinput-input" checked />
-                                    <span class="form-colorinput-color bg-white rounded-circle"></span>
+                                    <span class="form-colorinput-color rounded-circle bg-white"></span>
                                   </label>
                                 </div>
                                 <div class="col-auto">
@@ -978,7 +973,7 @@ Oh! Come and see the violence inherent in the system! Help, help, I'm being repr
                                       stroke-linejoin="round"
                                       aria-hidden="true"
                                       focusable="false"
-                                      class="icon me-1 icon-3"
+                                      class="icon icon-3 me-1"
                                     >
                                       <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
                                       <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
@@ -1003,7 +998,7 @@ Oh! Come and see the violence inherent in the system! Help, help, I'm being repr
                                       stroke-linejoin="round"
                                       aria-hidden="true"
                                       focusable="false"
-                                      class="icon me-1 icon-3"
+                                      class="icon icon-3 me-1"
                                     >
                                       <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
                                       <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
@@ -1027,7 +1022,7 @@ Oh! Come and see the violence inherent in the system! Help, help, I'm being repr
                                       stroke-linejoin="round"
                                       aria-hidden="true"
                                       focusable="false"
-                                      class="icon me-1 icon-3"
+                                      class="icon icon-3 me-1"
                                     >
                                       <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                                     </svg>
@@ -1050,7 +1045,7 @@ Oh! Come and see the violence inherent in the system! Help, help, I'm being repr
                                       stroke-linejoin="round"
                                       aria-hidden="true"
                                       focusable="false"
-                                      class="icon me-1 icon-3"
+                                      class="icon icon-3 me-1"
                                     >
                                       <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
                                     </svg>
@@ -1846,166 +1841,147 @@ Oh! Come and see the violence inherent in the system! Help, help, I'm being repr
                             <div class="mb-3">
                               <label class="form-label">Autosize textarea</label>
                               <textarea class="form-control" data-bs-toggle="autosize" placeholder="Type something…"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-xl-12">
+                          <div class="mb-3">
+                            <label class="form-label">Datalist example</label>
+                            <input class="form-control" list="datalistOptions" placeholder="Type to search..." />
+                            <datalist id="datalistOptions">
+                              <option value="Andorra" />
+                              <option value="United Arab Emirates" />
+                              <option value="Afghanistan" />
+                              <option value="Antigua" />
+                              <option value="Anguilla" />
+                              <option value="Armenia" />
+                              <option value="Angolan" />
+                              <option value="Antarctica" />
+                              <option value="Argentina" />
+                              <option value="American Samoa" />
+                            </datalist>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Range input</label>
+                            <input type="range" class="form-range mb-2" value="40" min="0"
+                              max="100" step="10" />
+                            <div class="form-range mb-2" id="range-simple"></div>
+                            <div class="form-range mb-2" id="range-connect"></div>
+                            <div class="form-range text-green mb-2" id="range-color"></div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Datepicker</label>
+                            <input class="form-control mb-2" placeholder="Select a date" id="datepicker-default"
+                              value="2020-06-20" />
+                            <div class="input-icon mb-2">
+                              <input class="form-control" placeholder="Select a date" id="datepicker-icon"
+                                value="2020-06-20" />
+                              <span
+                                class="input-icon-addon"><!-- Download SVG icon from http://tabler.io/icons/icon/calendar -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                                  focusable="false" class="icon icon-1">
+                                  <path
+                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
+                                  <path d="M16 3v4" />
+                                  <path d="M8 3v4" />
+                                  <path d="M4 11h16" />
+                                  <path d="M11 15h1" />
+                                  <path d="M12 15v3" />
+                                </svg></span>
+                            </div>
+                            <div class="input-icon">
+                              <span
+                                class="input-icon-addon"><!-- Download SVG icon from http://tabler.io/icons/icon/calendar -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                                  focusable="false" class="icon icon-1">
+                                  <path
+                                    d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
+                                  <path d="M16 3v4" />
+                                  <path d="M8 3v4" />
+                                  <path d="M4 11h16" />
+                                  <path d="M11 15h1" />
+                                  <path d="M12 15v3" />
+                                </svg></span>
+                              <input class="form-control" placeholder="Select a date" id="datepicker-icon-prepend"
+                                value="2020-06-20" />
                             </div>
                           </div>
-                          <div class="col-md-6 col-xl-12">
-                            <div class="mb-3">
-                              <label class="form-label">Datalist example</label>
-                              <input class="form-control" list="datalistOptions" placeholder="Type to search..." />
-                              <datalist id="datalistOptions">
-                                <option value="Andorra" />
-                                <option value="United Arab Emirates" />
-                                <option value="Afghanistan" />
-                                <option value="Antigua" />
-                                <option value="Anguilla" />
-                                <option value="Armenia" />
-                                <option value="Angolan" />
-                                <option value="Antarctica" />
-                                <option value="Argentina" />
-                                <option value="American Samoa" />
-                              </datalist>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Range input</label>
-                              <input type="range" class="form-range mb-2" value="40" min="0" max="100" step="10" />
-                              <div class="form-range mb-2" id="range-simple"></div>
-                              <div class="form-range mb-2" id="range-connect"></div>
-                              <div class="form-range mb-2 text-green" id="range-color"></div>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Datepicker</label>
-                              <input class="form-control mb-2" placeholder="Select a date" id="datepicker-default" value="2020-06-20" />
-                              <div class="input-icon mb-2">
-                                <input class="form-control" placeholder="Select a date" id="datepicker-icon" value="2020-06-20" />
-                                <span class="input-icon-addon"
-                                  ><!-- Download SVG icon from http://tabler.io/icons/icon/calendar -->
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    aria-hidden="true"
-                                    focusable="false"
-                                    class="icon icon-1"
-                                  >
-                                    <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
-                                    <path d="M16 3v4" />
-                                    <path d="M8 3v4" />
-                                    <path d="M4 11h16" />
-                                    <path d="M11 15h1" />
-                                    <path d="M12 15v3" /></svg
-                                ></span>
-                              </div>
-                              <div class="input-icon">
-                                <span class="input-icon-addon"
-                                  ><!-- Download SVG icon from http://tabler.io/icons/icon/calendar -->
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    aria-hidden="true"
-                                    focusable="false"
-                                    class="icon icon-1"
-                                  >
-                                    <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
-                                    <path d="M16 3v4" />
-                                    <path d="M8 3v4" />
-                                    <path d="M4 11h16" />
-                                    <path d="M11 15h1" />
-                                    <path d="M12 15v3" /></svg
-                                ></span>
-                                <input class="form-control" placeholder="Select a date" id="datepicker-icon-prepend" value="2020-06-20" />
+                          <div class="mb-3">
+                            <label class="form-label">Inline datepicker</label>
+                            <div class="datepicker-inline" id="datepicker-inline"></div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Progress</label>
+                            <div class="progress progress-1 mb-2">
+                              <div class="progress-bar" style="width: 38%" role="progressbar" aria-valuenow="38"
+                                aria-valuemin="0" aria-valuemax="100" aria-label="38% Complete">
+                                <span class="visually-hidden">38% Complete</span>
                               </div>
                             </div>
-                            <div class="mb-3">
-                              <label class="form-label">Inline datepicker</label>
-                              <div class="datepicker-inline" id="datepicker-inline"></div>
+                            <div class="progress progress-2">
+                              <div class="progress-bar progress-bar-indeterminate bg-green"></div>
                             </div>
-                            <div class="mb-3">
-                              <label class="form-label">Progress</label>
-                              <div class="progress progress-1 mb-2">
-                                <div
-                                  class="progress-bar"
-                                  style="width: 38%"
-                                  role="progressbar"
-                                  aria-valuenow="38"
-                                  aria-valuemin="0"
-                                  aria-valuemax="100"
-                                  aria-label="38% Complete"
-                                >
-                                  <span class="visually-hidden">38% Complete</span>
-                                </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Form buttons</label>
+                            <div class="row">
+                              <div class="col">
+                                <a href="#" class="btn btn-4 w-100">
+                                  <!-- Download SVG icon from http://tabler.io/icons/icon/brand-github -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                                    focusable="false" class="icon text-github icon-2">
+                                    <path
+                                      d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                  </svg>
+                                  Login with Github
+                                </a>
                               </div>
-                              <div class="progress progress-2">
-                                <div class="progress-bar progress-bar-indeterminate bg-green"></div>
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Form buttons</label>
-                              <div class="row">
-                                <div class="col">
-                                  <a href="#" class="btn btn-4 w-100">
-                                    <!-- Download SVG icon from http://tabler.io/icons/icon/brand-github -->
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                      stroke="currentColor"
-                                      stroke-width="2"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      aria-hidden="true"
-                                      focusable="false"
-                                      class="icon text-github icon-2"
-                                    >
-                                      <path
-                                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                                      />
-                                    </svg>
-                                    Login with Github
-                                  </a>
-                                </div>
-                                <div class="col">
-                                  <a href="#" class="btn btn-4 w-100">
-                                    <!-- Download SVG icon from http://tabler.io/icons/icon/brand-x -->
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                      stroke="currentColor"
-                                      stroke-width="2"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      aria-hidden="true"
-                                      focusable="false"
-                                      class="icon text-x icon-2"
-                                    >
-                                      <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-                                      <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-                                    </svg>
-                                    Login with X
-                                  </a>
-                                </div>
+                              <div class="col">
+                                <a href="#" class="btn btn-4 w-100">
+                                  <!-- Download SVG icon from http://tabler.io/icons/icon/brand-x -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                                    focusable="false" class="icon text-x icon-2">
+                                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                                  </svg>
+                                  Login with X
+                                </a>
                               </div>
                             </div>
-                            <div class="mb-3">
-                              <label class="form-label">Tags input</label>
-                              <select class="form-select" placeholder="Select tags" id="select-tags" value="" multiple>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Tags input</label>
+                            <select class="form-select" placeholder="Select tags" id="select-tags"
+                              value="" multiple>
+                              <option value="HTML">HTML</option>
+                              <option value="JavaScript">JavaScript</option>
+                              <option value="CSS">CSS</option>
+                              <option value="jQuery">jQuery</option>
+                              <option value="Bootstrap">Bootstrap</option>
+                              <option value="Ruby">Ruby</option>
+                              <option value="Python">Python</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Advanced select</label>
+                            <select class="form-select" id="select-users" value="">
+                              <option value="1">Chuck Tesla</option>
+                              <option value="2">Elon Musk</option>
+                              <option value="3">Paweł Kuna</option>
+                              <option value="4">Nikola Tesla</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Advanced select with optgroup</label>
+                            <select class="form-select" id="select-optgroups" value="">
+                              <optgroup label="Tags">
                                 <option value="HTML">HTML</option>
                                 <option value="JavaScript">JavaScript</option>
                                 <option value="CSS">CSS</option>
@@ -2013,830 +1989,726 @@ Oh! Come and see the violence inherent in the system! Help, help, I'm being repr
                                 <option value="Bootstrap">Bootstrap</option>
                                 <option value="Ruby">Ruby</option>
                                 <option value="Python">Python</option>
-                              </select>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Advanced select</label>
-                              <select class="form-select" id="select-users" value="">
-                                <option value="1">Chuck Tesla</option>
-                                <option value="2">Elon Musk</option>
-                                <option value="3">Paweł Kuna</option>
-                                <option value="4">Nikola Tesla</option>
-                              </select>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Advanced select with optgroup</label>
-                              <select class="form-select" id="select-optgroups" value="">
-                                <optgroup label="Tags">
-                                  <option value="HTML">HTML</option>
-                                  <option value="JavaScript">JavaScript</option>
-                                  <option value="CSS">CSS</option>
-                                  <option value="jQuery">jQuery</option>
-                                  <option value="Bootstrap">Bootstrap</option>
-                                  <option value="Ruby">Ruby</option>
-                                  <option value="Python">Python</option>
-                                </optgroup>
-                                <optgroup label="People">
-                                  <option value="Chuck Tesla">Chuck Tesla</option>
-                                  <option value="Elon Musk">Elon Musk</option>
-                                  <option value="Paweł Kuna">Paweł Kuna</option>
-                                  <option value="Nikola Tesla">Nikola Tesla</option>
-                                </optgroup>
-                              </select>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Select with avatars</label>
-                              <select class="form-select" id="select-people" value="">
-                                <option
-                                  value="1"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/000m.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Paweł Kuna
-                                </option>
-                                <option
-                                  value="2"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/052f.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Jeffie Lewzey
-                                </option>
-                                <option
-                                  value="3"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/002m.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Mallory Hulme
-                                </option>
-                                <option
-                                  value="4"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/003m.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Dunn Slane
-                                </option>
-                                <option
-                                  value="5"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/000f.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Emmy Levet
-                                </option>
-                                <option
-                                  value="6"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/001f.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Maryjo Lebarree
-                                </option>
-                                <option
-                                  value="7"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/004m.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Egan Poetz
-                                </option>
-                                <option
-                                  value="8"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/002f.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Kellie Skingley
-                                </option>
-                                <option
-                                  value="9"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/003f.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Christabel Charlwood
-                                </option>
-                                <option
-                                  value="10"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/063m.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Haskel Shelper
-                                </option>
-                                <option
-                                  value="11"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/006m.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Lorry Mion
-                                </option>
-                                <option
-                                  value="12"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/004f.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Leesa Beaty
-                                </option>
-                                <option
-                                  value="13"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/007m.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Perren Keemar
-                                </option>
-                                <option
-                                  value="14"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34;&gt;
+                              </optgroup>
+                              <optgroup label="People">
+                                <option value="Chuck Tesla">Chuck Tesla</option>
+                                <option value="Elon Musk">Elon Musk</option>
+                                <option value="Paweł Kuna">Paweł Kuna</option>
+                                <option value="Nikola Tesla">Nikola Tesla</option>
+                              </optgroup>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Select with avatars</label>
+                            <select class="form-select" id="select-people" value="">
+                              <option value="1"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/000m.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Paweł Kuna
+                              </option>
+                              <option value="2"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/052f.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Jeffie Lewzey
+                              </option>
+                              <option value="3"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/002m.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Mallory Hulme
+                              </option>
+                              <option value="4"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/003m.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Dunn Slane
+                              </option>
+                              <option value="5"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/000f.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Emmy Levet
+                              </option>
+                              <option value="6"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/001f.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Maryjo Lebarree
+                              </option>
+                              <option value="7"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/004m.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Egan Poetz
+                              </option>
+                              <option value="8"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/002f.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Kellie Skingley
+                              </option>
+                              <option value="9"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/003f.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Christabel Charlwood
+                              </option>
+                              <option value="10"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/063m.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Haskel Shelper
+                              </option>
+                              <option value="11"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/006m.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Lorry Mion
+                              </option>
+                              <option value="12"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/004f.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Leesa Beaty
+                              </option>
+                              <option value="13"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/007m.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Perren Keemar
+                              </option>
+                              <option value="14"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34;&gt;
 SA
-&lt;/span&gt;"
-                                >
-                                  Sunny Airey
-                                </option>
-                                <option
-                                  value="15"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/009m.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Geoffry Flaunders
-                                </option>
-                                <option
-                                  value="16"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/010m.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Thatcher Keel
-                                </option>
-                                <option
-                                  value="17"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/005f.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Dyann Escala
-                                </option>
-                                <option
-                                  value="18"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/006f.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Avivah Mugleston
-                                </option>
-                                <option
-                                  value="19"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34;&gt;
+&lt;/span&gt;">
+                                Sunny Airey
+                              </option>
+                              <option value="15"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/009m.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Geoffry Flaunders
+                              </option>
+                              <option value="16"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/010m.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Thatcher Keel
+                              </option>
+                              <option value="17"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/005f.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Dyann Escala
+                              </option>
+                              <option value="18"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/006f.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Avivah Mugleston
+                              </option>
+                              <option value="19"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34;&gt;
 AA
-&lt;/span&gt;"
-                                >
-                                  Arlie Armstead
-                                </option>
-                                <option
-                                  value="20"
-                                  data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/008f.jpg)&#34;&gt;
-&lt;/span&gt;"
-                                >
-                                  Tessie Curzon
-                                </option>
-                              </select>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Select with flags</label>
-                              <select class="form-select" id="select-countries" value="">
-                                <option value="pl" data-custom-properties="&lt;span class=&#34;flag flag-xs flag-country-pl&#34;&gt;&lt;/span&gt;">
-                                  Poland
-                                </option>
-                                <option value="de" data-custom-properties="&lt;span class=&#34;flag flag-xs flag-country-de&#34;&gt;&lt;/span&gt;">
-                                  Germany
-                                </option>
-                                <option value="cz" data-custom-properties="&lt;span class=&#34;flag flag-xs flag-country-cz&#34;&gt;&lt;/span&gt;">
-                                  Czech Republic
-                                </option>
-                                <option value="br" data-custom-properties="&lt;span class=&#34;flag flag-xs flag-country-br&#34;&gt;&lt;/span&gt;">
-                                  Brazil
-                                </option>
-                              </select>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Select with labels</label>
-                              <select class="form-select" id="select-labels" value="">
-                                <option value="copy" data-custom-properties="&lt;span class=&#34;badge bg-primary-lt&#34;&gt;cmd + C&lt;/span&gt;">Copy</option>
-                                <option value="paste" data-custom-properties="&lt;span class=&#34;badge bg-primary-lt&#34;&gt;cmd + V&lt;/span&gt;">
-                                  Paste
-                                </option>
-                                <option value="cut" data-custom-properties="&lt;span class=&#34;badge bg-primary-lt&#34;&gt;cmd + X&lt;/span&gt;">Cut</option>
-                              </select>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Advanced select with validation state</label>
-                              <select class="form-select mb-3 is-valid" id="select-countries-valid" value="">
-                                <option value="pl">Poland</option>
-                                <option value="de">Germany</option>
-                                <option value="cz">Czech Republic</option>
-                                <option value="br">Brazil</option>
-                              </select>
-                              <select class="form-select is-invalid" id="select-countries-invalid" value="">
-                                <option value="pl">Poland</option>
-                                <option value="de">Germany</option>
-                                <option value="cz">Czech Republic</option>
-                                <option value="br">Brazil</option>
-                              </select>
-                            </div>
+&lt;/span&gt;">
+                                Arlie Armstead
+                              </option>
+                              <option value="20"
+                                data-custom-properties="&lt;span class=&#34;avatar avatar-xs&#34; style=&#34;background-image: url(./static/avatars/008f.jpg)&#34;&gt;
+&lt;/span&gt;">
+                                Tessie Curzon
+                              </option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Select with flags</label>
+                            <select class="form-select" id="select-countries" value="">
+                              <option value="pl"
+                                data-custom-properties="&lt;span class=&#34;flag flag-xs flag-country-pl&#34;&gt;&lt;/span&gt;">
+                                Poland
+                              </option>
+                              <option value="de"
+                                data-custom-properties="&lt;span class=&#34;flag flag-xs flag-country-de&#34;&gt;&lt;/span&gt;">
+                                Germany
+                              </option>
+                              <option value="cz"
+                                data-custom-properties="&lt;span class=&#34;flag flag-xs flag-country-cz&#34;&gt;&lt;/span&gt;">
+                                Czech Republic
+                              </option>
+                              <option value="br"
+                                data-custom-properties="&lt;span class=&#34;flag flag-xs flag-country-br&#34;&gt;&lt;/span&gt;">
+                                Brazil
+                              </option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Select with labels</label>
+                            <select class="form-select" id="select-labels" value="">
+                              <option value="copy"
+                                data-custom-properties="&lt;span class=&#34;badge bg-primary-lt&#34;&gt;cmd + C&lt;/span&gt;">
+                                Copy</option>
+                              <option value="paste"
+                                data-custom-properties="&lt;span class=&#34;badge bg-primary-lt&#34;&gt;cmd + V&lt;/span&gt;">
+                                Paste
+                              </option>
+                              <option value="cut"
+                                data-custom-properties="&lt;span class=&#34;badge bg-primary-lt&#34;&gt;cmd + X&lt;/span&gt;">
+                                Cut</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Advanced select with validation state</label>
+                            <select class="form-select is-valid mb-3" id="select-countries-valid" value="">
+                              <option value="pl">Poland</option>
+                              <option value="de">Germany</option>
+                              <option value="cz">Czech Republic</option>
+                              <option value="br">Brazil</option>
+                            </select>
+                            <select class="form-select is-invalid" id="select-countries-invalid" value="">
+                              <option value="pl">Poland</option>
+                              <option value="de">Germany</option>
+                              <option value="cz">Czech Republic</option>
+                              <option value="br">Brazil</option>
+                            </select>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-footer text-end">
-                    <div class="d-flex">
-                      <a href="#" class="btn btn-link">Cancel</a>
-                      <button type="submit" class="btn btn-primary ms-auto">Send data</button>
-                    </div>
+                </div>
+                <div class="card-footer text-end">
+                  <div class="d-flex">
+                    <a href="#" class="btn btn-link">Cancel</a>
+                    <button type="submit" class="btn btn-primary ms-auto">Send data</button>
                   </div>
-                </form>
-              </div>
-              <div class="col-md-6">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title">Project ID</h3>
-                    <p class="card-subtitle">Used when interacting with the API.</p>
-                    <div class="input-icon">
-                      <input type="text" value="prj_5ae74426fe935327a8fa178b07d84ad9" class="form-control" placeholder="Search…" readonly />
-                      <span class="input-icon-addon">
-                        <!-- Download SVG icon from http://tabler.io/icons/icon/files -->
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          aria-hidden="true"
-                          focusable="false"
-                          class="icon icon-1"
-                        >
-                          <path d="M15 3v4a1 1 0 0 0 1 1h4" />
-                          <path d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z" />
-                          <path d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2" />
-                        </svg>
-                      </span>
-                    </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Project ID</h3>
+                  <p class="card-subtitle">Used when interacting with the API.</p>
+                  <div class="input-icon">
+                    <input type="text" value="prj_5ae74426fe935327a8fa178b07d84ad9" class="form-control"
+                      placeholder="Search…" readonly />
+                    <span class="input-icon-addon">
+                      <!-- Download SVG icon from http://tabler.io/icons/icon/files -->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true" focusable="false" class="icon icon-1">
+                        <path d="M15 3v4a1 1 0 0 0 1 1h4" />
+                        <path d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z" />
+                        <path d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2" />
+                      </svg>
+                    </span>
                   </div>
-                  <div class="card-footer">
-                    <div class="row align-items-center">
-                      <div class="col">Learn more about <a href="#">Project ID</a></div>
-                      <div class="col-auto">
-                        <a href="#" class="btn btn-primary btn-2"> Save </a>
-                      </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row align-items-center">
+                    <div class="col">Learn more about <a href="#">Project ID</a></div>
+                    <div class="col-auto">
+                      <a href="#" class="btn btn-primary btn-2"> Save </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h3 class="card-title">Node.js Version</h3>
-                    <p class="card-subtitle">
-                      The version of Node.js that is used in the Build Step and for Serverless Functions. A new Deployment is required for your changes to take
-                      effect.
-                    </p>
-                    <select class="form-select">
-                      <option>14.x</option>
-                      <option>12.x</option>
-                    </select>
-                  </div>
-                  <div class="card-footer">Learn more about <a href="#">Node.js Version</a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Node.js Version</h3>
+                  <p class="card-subtitle">
+                    The version of Node.js that is used in the Build Step and for Serverless Functions. A new Deployment
+                    is required for your changes to take
+                    effect.
+                  </p>
+                  <select class="form-select">
+                    <option>14.x</option>
+                    <option>12.x</option>
+                  </select>
                 </div>
+                <div class="card-footer">Learn more about <a href="#">Node.js Version</a></div>
               </div>
-              <div class="col-12 col-lg-4">
-                <form class="card h-100">
-                  <div class="card-header">
-                    <h3 class="card-title">Basic form</h3>
+            </div>
+            <div class="col-12 col-lg-4">
+              <form class="card h-100">
+                <div class="card-header">
+                  <h3 class="card-title">Basic form</h3>
+                </div>
+                <div class="card-body">
+                  <div class="mb-3">
+                    <label class="form-label required">Email address</label>
+                    <div>
+                      <input type="email" class="form-control" aria-describedby="emailHelp"
+                        placeholder="Enter email" />
+                      <small class="form-hint">We'll never share your email with anyone else.</small>
+                    </div>
                   </div>
-                  <div class="card-body">
-                    <div class="mb-3">
-                      <label class="form-label required">Email address</label>
-                      <div>
-                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" />
-                        <small class="form-hint">We'll never share your email with anyone else.</small>
-                      </div>
+                  <div class="mb-3">
+                    <label class="form-label required">Password</label>
+                    <div>
+                      <input type="password" class="form-control" placeholder="Password" />
+                      <small class="form-hint">
+                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain
+                        spaces, special characters, or emoji.
+                      </small>
                     </div>
-                    <div class="mb-3">
-                      <label class="form-label required">Password</label>
-                      <div>
-                        <input type="password" class="form-control" placeholder="Password" />
-                        <small class="form-hint">
-                          Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                        </small>
-                      </div>
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Select</label>
-                      <div>
-                        <select class="form-select">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Select</label>
+                    <div>
+                      <select class="form-select">
+                        <option>Option 1</option>
+                        <optgroup label="Optgroup 1">
                           <option>Option 1</option>
-                          <optgroup label="Optgroup 1">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                          </optgroup>
                           <option>Option 2</option>
-                          <optgroup label="Optgroup 2">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                          </optgroup>
-                          <optgroup label="Optgroup 3">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                          </optgroup>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Checkboxes</label>
-                      <div>
-                        <label class="form-check">
-                          <input class="form-check-input" type="checkbox" checked />
-                          <span class="form-check-label">Option 1</span>
-                        </label>
-                        <label class="form-check">
-                          <input class="form-check-input" type="checkbox" />
-                          <span class="form-check-label">Option 2</span>
-                        </label>
-                        <label class="form-check">
-                          <input class="form-check-input" type="checkbox" disabled />
-                          <span class="form-check-label">Option 3</span>
-                        </label>
-                      </div>
+                        </optgroup>
+                        <option>Option 2</option>
+                        <optgroup label="Optgroup 2">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </optgroup>
+                        <optgroup label="Optgroup 3">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </optgroup>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <div class="text-end">
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                  <div class="mb-3">
+                    <label class="form-label">Checkboxes</label>
+                    <div>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" checked />
+                        <span class="form-check-label">Option 1</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" />
+                        <span class="form-check-label">Option 2</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" disabled />
+                        <span class="form-check-label">Option 3</span>
+                      </label>
                     </div>
-                  </div>
-                </form>
-              </div>
-              <div class="col-lg-8">
-                <div class="row row-cards">
-                  <div class="col-12 col-lg-6">
-                    <div class="card">
-                      <div class="card-header">
-                        <h3 class="card-title">Input mask</h3>
-                      </div>
-                      <div class="card-body">
-                        <div class="mb-3">
-                          <label class="form-label">Date</label>
-                          <input
-                            type="text"
-                            name="input-mask"
-                            class="form-control"
-                            data-mask="00/00/0000"
-                            data-mask-visible="true"
-                            placeholder="00/00/0000"
-                            autocomplete="off"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Hour</label>
-                          <input
-                            type="text"
-                            name="input-mask"
-                            class="form-control"
-                            data-mask="00:00:00"
-                            data-mask-visible="true"
-                            placeholder="00:00:00"
-                            autocomplete="off"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Date &amp; Hour</label>
-                          <input
-                            type="text"
-                            name="input-mask"
-                            class="form-control"
-                            data-mask="00/00/0000 00:00:00"
-                            data-mask-visible="true"
-                            placeholder="00/00/0000 00:00:00"
-                            autocomplete="off"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">ZIP Code</label>
-                          <input
-                            type="text"
-                            name="input-mask"
-                            class="form-control"
-                            data-mask="00000-000"
-                            data-mask-visible="true"
-                            placeholder="00000-000"
-                            autocomplete="off"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Money</label>
-                          <input
-                            type="text"
-                            name="input-mask"
-                            class="form-control"
-                            data-mask="000.000.000.000.000,00"
-                            data-mask-visible="true"
-                            placeholder="000.000.000.000.000,00"
-                            data-mask-reverse="true"
-                            autocomplete="off"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Telephone</label>
-                          <input
-                            type="text"
-                            name="input-mask"
-                            class="form-control"
-                            data-mask="0000-0000"
-                            data-mask-visible="true"
-                            placeholder="0000-0000"
-                            autocomplete="off"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Telephone with Code Area</label>
-                          <input
-                            type="text"
-                            name="input-mask"
-                            class="form-control"
-                            data-mask="(00) 0000-0000"
-                            data-mask-visible="true"
-                            placeholder="(00) 0000-0000"
-                            autocomplete="off"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">IP Address</label>
-                          <input
-                            type="text"
-                            name="input-mask"
-                            class="form-control"
-                            data-mask="099.099.099.099"
-                            data-mask-visible="true"
-                            placeholder="000.000.000.000"
-                            autocomplete="off"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <form class="card h-100">
-                      <div class="card-header">
-                        <h3 class="card-title">My Profile</h3>
-                      </div>
-                      <div class="card-body">
-                        <div class="mb-3">
-                          <div class="row">
-                            <div class="col-auto">
-                              <span class="avatar avatar-md" style="background-image: url(./static/avatars/002m.jpg)"> </span>
-                            </div>
-                            <div class="col">
-                              <div class="mb-3">
-                                <label class="form-label">Email-Address</label>
-                                <input class="form-control" placeholder="your-email@domain.com" />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Bio</label>
-                          <textarea class="form-control" rows="5">Big belly rude boy, million dollar hustler. Unemployed.</textarea>
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Email-Address</label>
-                          <input class="form-control" placeholder="your-email@domain.com" />
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Password</label>
-                          <input type="password" class="form-control" value="password" />
-                        </div>
-                      </div>
-                      <div class="card-footer text-end">
-                        <a href="#" class="btn btn-primary btn-2"> Save </a>
-                      </div>
-                    </form>
                   </div>
                 </div>
+                <div class="card-footer">
+                  <div class="text-end">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-8">
+              <div class="row row-cards">
+                <div class="col-12 col-lg-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">Input mask</h3>
+                    </div>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <label class="form-label">Date</label>
+                        <input type="text" name="input-mask" class="form-control" data-mask="00/00/0000"
+                          data-mask-visible="true" placeholder="00/00/0000" autocomplete="off" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Hour</label>
+                        <input type="text" name="input-mask" class="form-control" data-mask="00:00:00"
+                          data-mask-visible="true" placeholder="00:00:00" autocomplete="off" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Date &amp; Hour</label>
+                        <input type="text" name="input-mask" class="form-control"
+                          data-mask="00/00/0000 00:00:00" data-mask-visible="true"
+                          placeholder="00/00/0000 00:00:00" autocomplete="off" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">ZIP Code</label>
+                        <input type="text" name="input-mask" class="form-control" data-mask="00000-000"
+                          data-mask-visible="true" placeholder="00000-000" autocomplete="off" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Money</label>
+                        <input type="text" name="input-mask" class="form-control"
+                          data-mask="000.000.000.000.000,00" data-mask-visible="true"
+                          placeholder="000.000.000.000.000,00" data-mask-reverse="true" autocomplete="off" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Telephone</label>
+                        <input type="text" name="input-mask" class="form-control" data-mask="0000-0000"
+                          data-mask-visible="true" placeholder="0000-0000" autocomplete="off" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Telephone with Code Area</label>
+                        <input type="text" name="input-mask" class="form-control" data-mask="(00) 0000-0000"
+                          data-mask-visible="true" placeholder="(00) 0000-0000" autocomplete="off" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">IP Address</label>
+                        <input type="text" name="input-mask" class="form-control" data-mask="099.099.099.099"
+                          data-mask-visible="true" placeholder="000.000.000.000" autocomplete="off" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <form class="card h-100">
+                    <div class="card-header">
+                      <h3 class="card-title">My Profile</h3>
+                    </div>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <div class="row">
+                          <div class="col-auto">
+                            <span class="avatar avatar-md" style="background-image: url(./static/avatars/002m.jpg)">
+                            </span>
+                          </div>
+                          <div class="col">
+                            <div class="mb-3">
+                              <label class="form-label">Email-Address</label>
+                              <input class="form-control" placeholder="your-email@domain.com" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Bio</label>
+                        <textarea class="form-control" rows="5">Big belly rude boy, million dollar hustler. Unemployed.</textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Email-Address</label>
+                        <input class="form-control" placeholder="your-email@domain.com" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" value="password" />
+                      </div>
+                    </div>
+                    <div class="card-footer text-end">
+                      <a href="#" class="btn btn-primary btn-2"> Save </a>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <div class="col-lg-12">
-                <div class="row row-cards">
-                  <div class="col-12 col-lg-6">
-                    <form class="card">
-                      <div class="card-body">
-                        <h3 class="card-title">Edit Profile</h3>
-                        <div class="row row-cards">
-                          <div class="col-md-5">
-                            <div class="mb-3">
-                              <label class="form-label">Company</label>
-                              <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc." />
-                            </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row row-cards">
+                <div class="col-12 col-lg-6">
+                  <form class="card">
+                    <div class="card-body">
+                      <h3 class="card-title">Edit Profile</h3>
+                      <div class="row row-cards">
+                        <div class="col-md-5">
+                          <div class="mb-3">
+                            <label class="form-label">Company</label>
+                            <input type="text" class="form-control" disabled="" placeholder="Company"
+                              value="Creative Code Inc." />
                           </div>
-                          <div class="col-sm-6 col-md-3">
-                            <div class="mb-3">
-                              <label class="form-label">Username</label>
-                              <input type="text" class="form-control" placeholder="Username" value="michael23" />
-                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="form-label">Username</label>
+                            <input type="text" class="form-control" placeholder="Username"
+                              value="michael23" />
                           </div>
-                          <div class="col-sm-6 col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label">Email address</label>
-                              <input type="email" class="form-control" placeholder="Email" />
-                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="Email" />
                           </div>
-                          <div class="col-sm-6 col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label">First Name</label>
-                              <input type="text" class="form-control" placeholder="Company" value="Chet" />
-                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="mb-3">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control" placeholder="Company" value="Chet" />
                           </div>
-                          <div class="col-sm-6 col-md-6">
-                            <div class="mb-3">
-                              <label class="form-label">Last Name</label>
-                              <input type="text" class="form-control" placeholder="Last Name" value="Faker" />
-                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="mb-3">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last Name" value="Faker" />
                           </div>
-                          <div class="col-md-12">
-                            <div class="mb-3">
-                              <label class="form-label">Address</label>
-                              <input type="text" class="form-control" placeholder="Home Address" value="Melbourne, Australia" />
-                            </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <input type="text" class="form-control" placeholder="Home Address"
+                              value="Melbourne, Australia" />
                           </div>
-                          <div class="col-sm-6 col-md-4">
-                            <div class="mb-3">
-                              <label class="form-label">City</label>
-                              <input type="text" class="form-control" placeholder="City" value="Melbourne" />
-                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control" placeholder="City" value="Melbourne" />
                           </div>
-                          <div class="col-sm-6 col-md-3">
-                            <div class="mb-3">
-                              <label class="form-label">Postal Code</label>
-                              <input type="test" class="form-control" placeholder="ZIP Code" />
-                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="form-label">Postal Code</label>
+                            <input type="test" class="form-control" placeholder="ZIP Code" />
                           </div>
-                          <div class="col-md-5">
-                            <div class="mb-3">
-                              <label class="form-label">Country</label>
-                              <select class="form-control form-select">
-                                <option value="">Germany</option>
-                              </select>
-                            </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="mb-3">
+                            <label class="form-label">Country</label>
+                            <select class="form-control form-select">
+                              <option value="">Germany</option>
+                            </select>
                           </div>
-                          <div class="col-md-12">
-                            <div class="mb-3 mb-0">
-                              <label class="form-label">About Me</label>
-                              <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">
+                        </div>
+                        <div class="col-md-12">
+                          <div class="mb-0 mb-3">
+                            <label class="form-label">About Me</label>
+                            <textarea rows="5" class="form-control"
+                              placeholder="Here can be your description" value="Mike">
 Oh so, your weak rhyme
 You doubt I'll bother, reading into it
 I'll probably won't, left to my own devices
-But that's the difference in our opinions.</textarea
-                              >
-                            </div>
+But that's the difference in our opinions.</textarea>
                           </div>
                         </div>
                       </div>
-                      <div class="card-footer text-end">
-                        <button type="submit" class="btn btn-primary">Update Profile</button>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="card h-100">
-                      <div class="card-header">
-                        <h3 class="card-title">HTTP Request</h3>
-                      </div>
-                      <div class="card-body">
-                        <div class="row row-cards">
-                          <div class="mb-3 col-sm-4 col-md-2">
-                            <label class="form-label required">Method</label>
-                            <select class="form-select">
-                              <option value="GET">GET</option>
-                              <option value="POST">POST</option>
-                              <option value="PUT">PUT</option>
-                              <option value="HEAD">HEAD</option>
-                              <option value="DELETE">DELETE</option>
-                              <option value="PATCH">PATCH</option>
-                            </select>
-                          </div>
-                          <div class="mb-3 col-sm-8 col-md-10">
-                            <label class="form-label required">URL</label>
-                            <input name="url" type="text" class="form-control" value="https://content.googleapis.com/discovery/v1/apis/surveys/v2/rest" />
-                          </div>
+                    </div>
+                    <div class="card-footer text-end">
+                      <button type="submit" class="btn btn-primary">Update Profile</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="card h-100">
+                    <div class="card-header">
+                      <h3 class="card-title">HTTP Request</h3>
+                    </div>
+                    <div class="card-body">
+                      <div class="row row-cards">
+                        <div class="col-sm-4 col-md-2 mb-3">
+                          <label class="form-label required">Method</label>
+                          <select class="form-select">
+                            <option value="GET">GET</option>
+                            <option value="POST">POST</option>
+                            <option value="PUT">PUT</option>
+                            <option value="HEAD">HEAD</option>
+                            <option value="DELETE">DELETE</option>
+                            <option value="PATCH">PATCH</option>
+                          </select>
                         </div>
-                        <div class="form-label">Assertions</div>
-                        <div class="table-responsive">
-                          <table class="table mb-0">
-                            <thead>
-                              <tr>
-                                <th>Source</th>
-                                <th>Property</th>
-                                <th>Comparison</th>
-                                <th>Target</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <select class="form-select">
-                                    <option value="STATUS_CODE" selected="">Status code</option>
-                                    <option value="JSON_BODY">JSON body</option>
-                                    <option value="HEADERS">Headers</option>
-                                    <option value="TEXT_BODY">Text body</option>
-                                    <option value="RESPONSE_TIME">Response time</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <input type="text" class="form-control" />
-                                </td>
-                                <td>
-                                  <select class="form-select">
-                                    <option value="EQUALS" selected="">Equals</option>
-                                    <option value="NOT_EQUALS">Not equals</option>
-                                    <option value="HAS_KEY">Has key</option>
-                                    <option value="NOT_HAS_KEY">Not has key</option>
-                                    <option value="HAS_VALUE">Has value</option>
-                                    <option value="NOT_HAS_VALUE">Not has value</option>
-                                    <option value="IS_EMPTY">Is empty</option>
-                                    <option value="NOT_EMPTY">Is not empty</option>
-                                    <option value="GREATER_THAN">Greater than</option>
-                                    <option value="LESS_THAN">Less than</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <input type="text" class="form-control" value="200" />
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <select class="form-select">
-                                    <option value="STATUS_CODE">Status code</option>
-                                    <option value="JSON_BODY" selected="">JSON body</option>
-                                    <option value="HEADERS">Headers</option>
-                                    <option value="TEXT_BODY">Text body</option>
-                                    <option value="RESPONSE_TIME">Response time</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <input type="text" class="form-control" value="parameters.alt.type" />
-                                </td>
-                                <td>
-                                  <select class="form-select">
-                                    <option value="EQUALS">Equals</option>
-                                    <option value="NOT_EQUALS">Not equals</option>
-                                    <option value="HAS_KEY">Has key</option>
-                                    <option value="NOT_HAS_KEY">Not has key</option>
-                                    <option value="HAS_VALUE" selected="">Has value</option>
-                                    <option value="NOT_HAS_VALUE">Not has value</option>
-                                    <option value="IS_EMPTY">Is empty</option>
-                                    <option value="NOT_EMPTY">Is not empty</option>
-                                    <option value="GREATER_THAN">Greater than</option>
-                                    <option value="LESS_THAN">Less than</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <input type="text" class="form-control" value="string" />
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <select class="form-select">
-                                    <option value="STATUS_CODE">Status code</option>
-                                    <option value="JSON_BODY">JSON body</option>
-                                    <option value="HEADERS">Headers</option>
-                                    <option value="TEXT_BODY">Text body</option>
-                                    <option value="RESPONSE_TIME" selected="">Response time</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <input type="text" class="form-control" />
-                                </td>
-                                <td>
-                                  <select class="form-select">
-                                    <option value="EQUALS">Equals</option>
-                                    <option value="NOT_EQUALS">Not equals</option>
-                                    <option value="HAS_KEY">Has key</option>
-                                    <option value="NOT_HAS_KEY">Not has key</option>
-                                    <option value="HAS_VALUE">Has value</option>
-                                    <option value="NOT_HAS_VALUE">Not has value</option>
-                                    <option value="IS_EMPTY">Is empty</option>
-                                    <option value="NOT_EMPTY">Is not empty</option>
-                                    <option value="GREATER_THAN">Greater than</option>
-                                    <option value="LESS_THAN" selected="">Less than</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <input type="text" class="form-control" value="500" />
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <select class="form-select">
-                                    <option value="STATUS_CODE">Status code</option>
-                                    <option value="JSON_BODY">JSON body</option>
-                                    <option value="HEADERS" selected="">Headers</option>
-                                    <option value="TEXT_BODY">Text body</option>
-                                    <option value="RESPONSE_TIME">Response time</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <input type="text" class="form-control" value="content-type" />
-                                </td>
-                                <td>
-                                  <select class="form-select">
-                                    <option value="EQUALS" selected="">Equals</option>
-                                    <option value="NOT_EQUALS">Not equals</option>
-                                    <option value="HAS_KEY">Has key</option>
-                                    <option value="NOT_HAS_KEY">Not has key</option>
-                                    <option value="HAS_VALUE">Has value</option>
-                                    <option value="NOT_HAS_VALUE">Not has value</option>
-                                    <option value="IS_EMPTY">Is empty</option>
-                                    <option value="NOT_EMPTY">Is not empty</option>
-                                    <option value="GREATER_THAN">Greater than</option>
-                                    <option value="LESS_THAN">Less than</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <input type="text" class="form-control" value="application/json; charset=UTF-8" />
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                        <div class="col-sm-8 col-md-10 mb-3">
+                          <label class="form-label required">URL</label>
+                          <input name="url" type="text" class="form-control"
+                            value="https://content.googleapis.com/discovery/v1/apis/surveys/v2/rest" />
                         </div>
                       </div>
-                      <div class="card-footer text-end">
-                        <button type="submit" class="btn btn-primary">Make request</button>
+                      <div class="form-label">Assertions</div>
+                      <div class="table-responsive">
+                        <table class="mb-0 table">
+                          <thead>
+                            <tr>
+                              <th>Source</th>
+                              <th>Property</th>
+                              <th>Comparison</th>
+                              <th>Target</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <select class="form-select">
+                                  <option value="STATUS_CODE" selected="">Status code</option>
+                                  <option value="JSON_BODY">JSON body</option>
+                                  <option value="HEADERS">Headers</option>
+                                  <option value="TEXT_BODY">Text body</option>
+                                  <option value="RESPONSE_TIME">Response time</option>
+                                </select>
+                              </td>
+                              <td>
+                                <input type="text" class="form-control" />
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="EQUALS" selected="">Equals</option>
+                                  <option value="NOT_EQUALS">Not equals</option>
+                                  <option value="HAS_KEY">Has key</option>
+                                  <option value="NOT_HAS_KEY">Not has key</option>
+                                  <option value="HAS_VALUE">Has value</option>
+                                  <option value="NOT_HAS_VALUE">Not has value</option>
+                                  <option value="IS_EMPTY">Is empty</option>
+                                  <option value="NOT_EMPTY">Is not empty</option>
+                                  <option value="GREATER_THAN">Greater than</option>
+                                  <option value="LESS_THAN">Less than</option>
+                                </select>
+                              </td>
+                              <td>
+                                <input type="text" class="form-control" value="200" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <select class="form-select">
+                                  <option value="STATUS_CODE">Status code</option>
+                                  <option value="JSON_BODY" selected="">JSON body</option>
+                                  <option value="HEADERS">Headers</option>
+                                  <option value="TEXT_BODY">Text body</option>
+                                  <option value="RESPONSE_TIME">Response time</option>
+                                </select>
+                              </td>
+                              <td>
+                                <input type="text" class="form-control" value="parameters.alt.type" />
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="EQUALS">Equals</option>
+                                  <option value="NOT_EQUALS">Not equals</option>
+                                  <option value="HAS_KEY">Has key</option>
+                                  <option value="NOT_HAS_KEY">Not has key</option>
+                                  <option value="HAS_VALUE" selected="">Has value</option>
+                                  <option value="NOT_HAS_VALUE">Not has value</option>
+                                  <option value="IS_EMPTY">Is empty</option>
+                                  <option value="NOT_EMPTY">Is not empty</option>
+                                  <option value="GREATER_THAN">Greater than</option>
+                                  <option value="LESS_THAN">Less than</option>
+                                </select>
+                              </td>
+                              <td>
+                                <input type="text" class="form-control" value="string" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <select class="form-select">
+                                  <option value="STATUS_CODE">Status code</option>
+                                  <option value="JSON_BODY">JSON body</option>
+                                  <option value="HEADERS">Headers</option>
+                                  <option value="TEXT_BODY">Text body</option>
+                                  <option value="RESPONSE_TIME" selected="">Response time</option>
+                                </select>
+                              </td>
+                              <td>
+                                <input type="text" class="form-control" />
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="EQUALS">Equals</option>
+                                  <option value="NOT_EQUALS">Not equals</option>
+                                  <option value="HAS_KEY">Has key</option>
+                                  <option value="NOT_HAS_KEY">Not has key</option>
+                                  <option value="HAS_VALUE">Has value</option>
+                                  <option value="NOT_HAS_VALUE">Not has value</option>
+                                  <option value="IS_EMPTY">Is empty</option>
+                                  <option value="NOT_EMPTY">Is not empty</option>
+                                  <option value="GREATER_THAN">Greater than</option>
+                                  <option value="LESS_THAN" selected="">Less than</option>
+                                </select>
+                              </td>
+                              <td>
+                                <input type="text" class="form-control" value="500" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <select class="form-select">
+                                  <option value="STATUS_CODE">Status code</option>
+                                  <option value="JSON_BODY">JSON body</option>
+                                  <option value="HEADERS" selected="">Headers</option>
+                                  <option value="TEXT_BODY">Text body</option>
+                                  <option value="RESPONSE_TIME">Response time</option>
+                                </select>
+                              </td>
+                              <td>
+                                <input type="text" class="form-control" value="content-type" />
+                              </td>
+                              <td>
+                                <select class="form-select">
+                                  <option value="EQUALS" selected="">Equals</option>
+                                  <option value="NOT_EQUALS">Not equals</option>
+                                  <option value="HAS_KEY">Has key</option>
+                                  <option value="NOT_HAS_KEY">Not has key</option>
+                                  <option value="HAS_VALUE">Has value</option>
+                                  <option value="NOT_HAS_VALUE">Not has value</option>
+                                  <option value="IS_EMPTY">Is empty</option>
+                                  <option value="NOT_EMPTY">Is not empty</option>
+                                  <option value="GREATER_THAN">Greater than</option>
+                                  <option value="LESS_THAN">Less than</option>
+                                </select>
+                              </td>
+                              <td>
+                                <input type="text" class="form-control"
+                                  value="application/json; charset=UTF-8" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
+                    </div>
+                    <div class="card-footer text-end">
+                      <button type="submit" class="btn btn-primary">Make request</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </main>
-        <!-- END PAGE BODY -->
-        @include('samples.includes.footer')
-      </div>
+        </div>
+      </main>
+      <!-- END PAGE BODY -->
+      @include('samples.includes.footer')
     </div>
-    @include('samples.includes.settings')";
-              },
-            },
-          });
+  </div>
+  @include('samples.includes.settings')";
+  },
+  },
+  });
+  });
+  </script>
+  <script>
+    /*
+  	This script handles the theme settings offcanvas functionality
+  	It saves the selected settings to localStorage and applies them to the document
+  	It also updates the URL with the selected settings as query parameters
+  	It also has a reset button to clear all settings and revert to default
+  	This is just a demo script to show how to implement theme settings. You can modify it as needed.
+  	*/
+    document.addEventListener("DOMContentLoaded", function() {
+      var themeConfig = {
+        theme: "light",
+        "theme-base": "gray",
+        "theme-font": "sans-serif",
+        "theme-primary": "blue",
+        "theme-radius": "1",
+      };
+      var url = new URL(window.location);
+      var form = document.getElementById("offcanvasSettings");
+      var resetButton = document.getElementById("reset-changes");
+      var checkItems = function() {
+        for (var key in themeConfig) {
+          var value = window.localStorage["tabler-" + key] || themeConfig[key];
+          if (!!value) {
+            var radios = form.querySelectorAll(`[name="${key}"]`);
+            if (!!radios) {
+              radios.forEach((radio) => {
+                radio.checked = radio.value === value;
+              });
+            }
+          }
+        }
+      };
+      form.addEventListener("change", function(event) {
+        var target = event.target,
+          name = target.name,
+          value = target.value;
+        for (var key in themeConfig) {
+          if (name === key) {
+            document.documentElement.setAttribute("data-bs-" + key, value);
+            window.localStorage.setItem("tabler-" + key, value);
+            url.searchParams.set(key, value);
+          }
+        }
+        window.history.pushState({}, "", url);
       });
-    </script>
-    <script>
-      /*
-	This script handles the theme settings offcanvas functionality
-	It saves the selected settings to localStorage and applies them to the document
-	It also updates the URL with the selected settings as query parameters
-	It also has a reset button to clear all settings and revert to default
-	This is just a demo script to show how to implement theme settings. You can modify it as needed.
-	*/
-      document.addEventListener("DOMContentLoaded", function () {
-        var themeConfig = {
-          theme:"light","theme-base":"gray","theme-font":"sans-serif","theme-primary":"blue","theme-radius":"1",
-        };
-        var url = new URL(window.location);
-        var form = document.getElementById("offcanvasSettings");
-        var resetButton = document.getElementById("reset-changes");
-        var checkItems = function () {
-          for (var key in themeConfig) {
-            var value = window.localStorage["tabler-" + key] || themeConfig[key];
-            if (!!value) {
-              var radios = form.querySelectorAll(`[name="${key}"]`);
-              if (!!radios) {
-                radios.forEach((radio) => {
-                  radio.checked = radio.value === value;
-                });
-              }
-            }
-          }
-        };
-        form.addEventListener("change", function (event) {
-          var target = event.target,
-            name = target.name,
-            value = target.value;
-          for (var key in themeConfig) {
-            if (name === key) {
-              document.documentElement.setAttribute("data-bs-" + key, value);
-              window.localStorage.setItem("tabler-" + key, value);
-              url.searchParams.set(key, value);
-            }
-          }
-          window.history.pushState({},"", url);
-        });
-        resetButton.addEventListener("click", function () {
-          for (var key in themeConfig) {
-            var value = themeConfig[key];
-            document.documentElement.removeAttribute("data-bs-" + key);
-            window.localStorage.removeItem("tabler-" + key);
-            url.searchParams.delete(key);
-          }
-          checkItems();
-          window.history.pushState({},"", url);
-        });
+      resetButton.addEventListener("click", function() {
+        for (var key in themeConfig) {
+          var value = themeConfig[key];
+          document.documentElement.removeAttribute("data-bs-" + key);
+          window.localStorage.removeItem("tabler-" + key);
+          url.searchParams.delete(key);
+        }
         checkItems();
+        window.history.pushState({}, "", url);
       });
-    </script>
-    <!-- END PAGE SCRIPTS -->
-  </body>
+      checkItems();
+    });
+  </script>
+  <!-- END PAGE SCRIPTS -->
+</body>
+
 </html>

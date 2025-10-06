@@ -7,7 +7,8 @@
 @endsection
 
 @section('description')
-  This page demonstrates all the available features of the app layout including headers, breadcrumbs, actions, tabs, modals, and more.
+  This page demonstrates all the available features of the app layout including headers, breadcrumbs, actions, tabs,
+  modals, and more.
 @endsection
 
 @section('actions')
@@ -73,9 +74,9 @@
 
 @php
   $breadcrumbs = [
-    ['title' => 'Dashboard', 'url' => '/'],
-    ['title' => 'Examples', 'url' => '#'],
-    ['title' => 'Demo Page', 'url' => '']
+      ['title' => 'Dashboard', 'url' => '/'],
+      ['title' => 'Examples', 'url' => '#'],
+      ['title' => 'Demo Page', 'url' => ''],
   ];
 @endphp
 
@@ -216,7 +217,8 @@
                   </div>
                 </div>
                 <div class="progress progress-sm">
-                  <div class="progress-bar bg-primary" style="width: 91.3%" role="progressbar" aria-valuenow="91.3" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-primary" style="width: 91.3%" role="progressbar" aria-valuenow="91.3"
+                    aria-valuemin="0" aria-valuemax="100">
                     <span class="visually-hidden">91.3% Complete</span>
                   </div>
                 </div>
@@ -307,7 +309,8 @@
                 <div class="list-group-item">
                   <div class="row align-items-center">
                     <div class="col-auto">
-                      <span class="avatar" style="background-image: url(https://ui-avatars.com/api/?name=JD&background=066fd1&color=fff)"></span>
+                      <span class="avatar"
+                        style="background-image: url(https://ui-avatars.com/api/?name=JD&background=066fd1&color=fff)"></span>
                     </div>
                     <div class="col text-truncate">
                       <div class="text-reset d-block">John Doe</div>
@@ -323,7 +326,8 @@
                 <div class="list-group-item">
                   <div class="row align-items-center">
                     <div class="col-auto">
-                      <span class="avatar" style="background-image: url(https://ui-avatars.com/api/?name=JS&background=d63939&color=fff)"></span>
+                      <span class="avatar"
+                        style="background-image: url(https://ui-avatars.com/api/?name=JS&background=d63939&color=fff)"></span>
                     </div>
                     <div class="col text-truncate">
                       <div class="text-reset d-block">Jane Smith</div>
@@ -339,7 +343,8 @@
                 <div class="list-group-item">
                   <div class="row align-items-center">
                     <div class="col-auto">
-                      <span class="avatar" style="background-image: url(https://ui-avatars.com/api/?name=BJ&background=2fb344&color=fff)"></span>
+                      <span class="avatar"
+                        style="background-image: url(https://ui-avatars.com/api/?name=BJ&background=2fb344&color=fff)"></span>
                     </div>
                     <div class="col text-truncate">
                       <div class="text-reset d-block">Bob Johnson</div>
@@ -454,22 +459,33 @@
               </div>
               <div class="card-body">
                 <div class="avatar-list avatar-list-stacked mb-3">
-                  <span class="avatar avatar-sm" style="background-image: url(https://ui-avatars.com/api/?name=A&background=066fd1&color=fff)"></span>
-                  <span class="avatar avatar-sm" style="background-image: url(https://ui-avatars.com/api/?name=B&background=d63939&color=fff)"></span>
-                  <span class="avatar avatar-sm" style="background-image: url(https://ui-avatars.com/api/?name=C&background=2fb344&color=fff)"></span>
-                  <span class="avatar avatar-sm" style="background-image: url(https://ui-avatars.com/api/?name=D&background=f59f00&color=fff)"></span>
+                  <span class="avatar avatar-sm"
+                    style="background-image: url(https://ui-avatars.com/api/?name=A&background=066fd1&color=fff)"></span>
+                  <span class="avatar avatar-sm"
+                    style="background-image: url(https://ui-avatars.com/api/?name=B&background=d63939&color=fff)"></span>
+                  <span class="avatar avatar-sm"
+                    style="background-image: url(https://ui-avatars.com/api/?name=C&background=2fb344&color=fff)"></span>
+                  <span class="avatar avatar-sm"
+                    style="background-image: url(https://ui-avatars.com/api/?name=D&background=f59f00&color=fff)"></span>
                   <span class="avatar avatar-sm">+5</span>
                 </div>
                 <div class="mb-3">
-                  <span class="avatar avatar-xs" style="background-image: url(https://ui-avatars.com/api/?name=XS&background=066fd1&color=fff)"></span>
-                  <span class="avatar avatar-sm" style="background-image: url(https://ui-avatars.com/api/?name=SM&background=066fd1&color=fff)"></span>
-                  <span class="avatar" style="background-image: url(https://ui-avatars.com/api/?name=MD&background=066fd1&color=fff)"></span>
-                  <span class="avatar avatar-lg" style="background-image: url(https://ui-avatars.com/api/?name=LG&background=066fd1&color=fff)"></span>
-                  <span class="avatar avatar-xl" style="background-image: url(https://ui-avatars.com/api/?name=XL&background=066fd1&color=fff)"></span>
+                  <span class="avatar avatar-xs"
+                    style="background-image: url(https://ui-avatars.com/api/?name=XS&background=066fd1&color=fff)"></span>
+                  <span class="avatar avatar-sm"
+                    style="background-image: url(https://ui-avatars.com/api/?name=SM&background=066fd1&color=fff)"></span>
+                  <span class="avatar"
+                    style="background-image: url(https://ui-avatars.com/api/?name=MD&background=066fd1&color=fff)"></span>
+                  <span class="avatar avatar-lg"
+                    style="background-image: url(https://ui-avatars.com/api/?name=LG&background=066fd1&color=fff)"></span>
+                  <span class="avatar avatar-xl"
+                    style="background-image: url(https://ui-avatars.com/api/?name=XL&background=066fd1&color=fff)"></span>
                 </div>
                 <div>
-                  <span class="avatar avatar-rounded" style="background-image: url(https://ui-avatars.com/api/?name=R&background=066fd1&color=fff)"></span>
-                  <span class="avatar" style="background-image: url(https://ui-avatars.com/api/?name=D&background=066fd1&color=fff)"></span>
+                  <span class="avatar avatar-rounded"
+                    style="background-image: url(https://ui-avatars.com/api/?name=R&background=066fd1&color=fff)"></span>
+                  <span class="avatar"
+                    style="background-image: url(https://ui-avatars.com/api/?name=D&background=066fd1&color=fff)"></span>
                 </div>
               </div>
             </div>
@@ -585,7 +601,7 @@
                 <h3 class="card-title">Data Passing Methods</h3>
               </div>
               <div class="table-responsive">
-                <table class="table card-table table-vcenter">
+                <table class="card-table table-vcenter table">
                   <thead>
                     <tr>
                       <th>Method</th>
@@ -639,14 +655,15 @@
                 <div class="accordion" id="accordion-demo">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-1">
                         Custom Scripts & Styles
                       </button>
                     </h2>
-                    <div id="collapse-1" class="accordion-collapse collapse show" data-bs-parent="#accordion-demo">
+                    <div id="collapse-1" class="accordion-collapse show collapse" data-bs-parent="#accordion-demo">
                       <div class="accordion-body pt-0">
                         <p>You can add custom scripts and styles using the available stacks:</p>
-                        <pre class="bg-light p-3 rounded"><code>@@push('head')
+                        <pre class="bg-light rounded p-3"><code>@@push('head')
   &lt;style&gt;
     .custom-class { color: red; }
   &lt;/style&gt;
@@ -656,25 +673,29 @@
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-2">
                         Modal System
                       </button>
                     </h2>
                     <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordion-demo">
                       <div class="accordion-body pt-0">
-                        <p>Modals can be added using the modals stack. Click the "Primary Action" button in the header to see a demo.</p>
+                        <p>Modals can be added using the modals stack. Click the "Primary Action" button in the header to
+                          see a demo.</p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-3">
                         Theme System
                       </button>
                     </h2>
                     <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordion-demo">
                       <div class="accordion-body pt-0">
-                        <p>The layout includes an automatic theme switcher that persists user preferences. Try switching between light and dark modes using the navbar theme selector.</p>
+                        <p>The layout includes an automatic theme switcher that persists user preferences. Try switching
+                          between light and dark modes using the navbar theme selector.</p>
                       </div>
                     </div>
                   </div>
@@ -759,8 +780,10 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>This is a demonstration of the modal system. Modals are added using the <code>@@push('modals')</code> directive.</p>
-          <p class="text-secondary mb-0">You can have as many modals as you need, and they can be triggered from anywhere in your page.</p>
+          <p>This is a demonstration of the modal system. Modals are added using the
+            <code>@@push('modals')</code> directive.</p>
+          <p class="text-secondary mb-0">You can have as many modals as you need, and they can be triggered from anywhere
+            in your page.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -791,7 +814,7 @@
           </div>
         </div>
       `;
-      
+
       // Create container if it doesn't exist
       let container = document.querySelector('.toast-container');
       if (!container) {
@@ -799,7 +822,7 @@
         container.className = 'toast-container position-fixed bottom-0 end-0 p-3';
         document.body.appendChild(container);
       }
-      
+
       // Add and show toast
       container.innerHTML = toastHtml;
       const toast = container.querySelector('.toast');
@@ -814,7 +837,7 @@
           e.preventDefault();
           const theme = this.getAttribute('data-bs-theme-value');
           localStorage.setItem('theme', theme);
-          
+
           if (theme === 'auto') {
             const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             document.documentElement.setAttribute('data-bs-theme', isDark ? 'dark' : 'light');
@@ -834,13 +857,13 @@
       list-style: none;
       padding-left: 0;
     }
-    
+
     .step-item {
       position: relative;
       padding-left: 2rem;
       padding-bottom: 1.5rem;
     }
-    
+
     .step-item:before {
       content: '';
       position: absolute;
@@ -852,11 +875,11 @@
       border-radius: 50%;
       z-index: 1;
     }
-    
+
     .step-item.active:before {
       background: var(--tblr-primary);
     }
-    
+
     .step-item:not(:last-child):after {
       content: '';
       position: absolute;
