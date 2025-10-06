@@ -19,7 +19,7 @@ We take the security of Laravel Starter seriously. If you believe you have found
 
 Instead, please report them via email to:
 
-**security@abitsoft.com**
+**security@abitbt.com**
 
 ### What to Include
 
@@ -173,9 +173,9 @@ Before deploying to production, ensure:
 
 ## Contact
 
-For security concerns, contact: **security@abitsoft.com**
+For security concerns, contact: **security@abitbt.com**
 
-For general inquiries: **hello@abitsoft.com**
+For general inquiries: **hello@abitbt.com**
 
 ---
 

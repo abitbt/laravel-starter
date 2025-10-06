@@ -30,7 +30,7 @@ Laravel 12 starter kit with Fortify authentication and a Bootstrap 5 Tabler UI�
 ### Option 1: Using Laravel Installer
 
 ```bash
-laravel new your-project --using=abitsoft/laravel-starter
+laravel new your-project --using=abitbt/laravel-starter
 cd your-project
 ```
 
@@ -38,7 +38,7 @@ cd your-project
 
 ```bash
 # Clone the repository
-git clone https://github.com/aBit-Soft/laravel-starter.git your-project
+git clone https://github.com/abitbt/laravel-starter.git your-project
 cd your-project
 
 # Install dependencies
@@ -301,7 +301,7 @@ php artisan storage:link
 - SQL injection prevention via Eloquent ORM
 - XSS protection via Blade auto-escaping
 
-If you discover a security vulnerability, please email security@abitsoft.com. See [SECURITY.md](SECURITY.md) for details.
+If you discover a security vulnerability, please email security@abitbt.com. See [SECURITY.md](SECURITY.md) for details.
 
 ## Testing
 
@@ -351,4 +351,4 @@ This project is open-sourced software licensed under the [MIT license](LICENSE).
 
 ---
 
-**Made with ❤️ by [aBit-Soft](https://github.com/aBit-Soft)**
+**Made with ❤️ by [aBit-Soft](https://github.com/abitbt)**
