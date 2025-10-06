@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vector Maps - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <!-- END PAGE LEVEL STYLES -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+  </head>
+  <body>
+    <a href="#content" class="visually-hidden skip-link">Skip to main content</a>
+    <div class="page">
+      @include('samples.includes.header')
+    @include('samples.includes.navbar')
+      <div class="page-wrapper">
+        <!-- BEGIN PAGE HEADER -->
+        <!-- BEGIN PAGE HEADER -->
+        <div class="page-header d-print-none">
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="col">
+                <h1 class="page-title">Vector Maps</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END PAGE HEADER -->
+        <!-- END PAGE HEADER -->
+        <!-- BEGIN PAGE BODY -->
+        <main id="content" class="page-body">
+          <div class="container-xl">
+            <div class="row row-cards">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">World map</h3>
+                    <div class="ratio ratio-4x3">
+                      <div>
+                        <div id="map-world-merc" class="w-100 h-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">Map with markers</h3>
+                    <div class="ratio ratio-4x3">
+                      <div>
+                        <div id="map-world-markers" class="w-100 h-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">Map with markers and lines</h3>
+                    <div class="ratio ratio-4x3">
+                      <div>
+                        <div id="map-world-lines" class="w-100 h-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- END PAGE BODY -->
+        @include('samples.includes.footer')
+      </div>
+    </div>
+    @include('samples.includes.settings')
+    <!-- BEGIN PAGE LIBRARIES -->
+    <!-- END PAGE LIBRARIES -->
+    @include('samples.includes.scripts')
+  </body>
+</html>

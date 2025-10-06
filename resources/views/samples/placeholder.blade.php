@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+  </head>
+  <body>
+    <a href="#content" class="visually-hidden skip-link">Skip to main content</a>
+    <div class="page">
+      @include('samples.includes.header')
+    @include('samples.includes.navbar')
+      <div class="page-wrapper">
+        <!-- BEGIN PAGE HEADER -->
+        <!-- BEGIN PAGE HEADER -->
+        <div class="page-header d-print-none">
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="col">
+                <h1 class="page-title">Placeholder</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END PAGE HEADER -->
+        <!-- END PAGE HEADER -->
+        <!-- BEGIN PAGE BODY -->
+        <main id="content" class="page-body">
+          <div class="container-xl">
+            <div class="row row-cards">
+              <div class="col-3">
+                <div class="card placeholder-glow">
+                  <div class="ratio ratio-21x9 card-img-top placeholder"></div>
+                  <div class="card-body">
+                    <div class="placeholder col-9 mb-3"></div>
+                    <div class="placeholder placeholder-xs col-10"></div>
+                    <div class="placeholder placeholder-xs col-11"></div>
+                    <div class="mt-3">
+                      <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card placeholder-glow">
+                  <div class="ratio ratio-21x9 card-img-top placeholder"></div>
+                  <div class="card-body">
+                    <div class="placeholder col-9 mb-3"></div>
+                    <div class="placeholder placeholder-xs col-10"></div>
+                    <div class="placeholder placeholder-xs col-11"></div>
+                    <div class="mt-3">
+                      <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card placeholder-glow">
+                  <div class="ratio ratio-21x9 card-img-top placeholder"></div>
+                  <div class="card-body">
+                    <div class="placeholder col-9 mb-3"></div>
+                    <div class="placeholder placeholder-xs col-10"></div>
+                    <div class="placeholder placeholder-xs col-11"></div>
+                    <div class="mt-3">
+                      <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card placeholder-glow">
+                  <div class="ratio ratio-21x9 card-img-top placeholder"></div>
+                  <div class="card-body">
+                    <div class="placeholder col-9 mb-3"></div>
+                    <div class="placeholder placeholder-xs col-10"></div>
+                    <div class="placeholder placeholder-xs col-11"></div>
+                    <div class="mt-3">
+                      <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="row row-cards">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-auto">
+                            <div class="avatar avatar-rounded placeholder"></div>
+                          </div>
+                          <div class="col">
+                            <div class="placeholder placeholder-xs col-9"></div>
+                            <div class="placeholder placeholder-xs col-7"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body py-5 text-center">
+                        <div>
+                          <div class="avatar avatar-rounded avatar-lg placeholder mb-3"></div>
+                        </div>
+                        <div class="mt w-75 mx-auto">
+                          <div class="placeholder col-9 mb-3"></div>
+                          <div class="placeholder placeholder-xs col-10"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="row row-cards">
+                  <div class="col-12">
+                    <div class="card placeholder-glow">
+                      <div class="ratio ratio-21x9 card-img-top placeholder"></div>
+                      <div class="card-body">
+                        <div class="placeholder col-9 mb-3"></div>
+                        <div class="placeholder placeholder-xs col-10"></div>
+                        <div class="placeholder placeholder-xs col-11"></div>
+                        <div class="mt-3">
+                          <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="row g-0 align-items-center placeholder-glow">
+                        <div class="col-3">
+                          <div class="ratio ratio-1x1 card-img-start placeholder"></div>
+                        </div>
+                        <div class="col">
+                          <div class="card-body">
+                            <div class="placeholder col-9 mb-3"></div>
+                            <div class="placeholder placeholder-xs col-10"></div>
+                            <div class="placeholder placeholder-xs col-11"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="row row-cards">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body text-end placeholder-glow">
+                        <div class="placeholder col-9 mb-3"></div>
+                        <div class="placeholder placeholder-xs col-10"></div>
+                        <div class="placeholder placeholder-xs col-12"></div>
+                        <div class="placeholder placeholder-xs col-11"></div>
+                        <div class="placeholder placeholder-xs col-8"></div>
+                        <div class="placeholder placeholder-xs col-10"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card">
+                      <ul class="list-group list-group-flush placeholder-glow">
+                        <li class="list-group-item">
+                          <div class="row align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar avatar-rounded placeholder"></div>
+                            </div>
+                            <div class="col-7">
+                              <div class="placeholder placeholder-xs col-9"></div>
+                              <div class="placeholder placeholder-xs col-7"></div>
+                            </div>
+                            <div class="col-2 ms-auto text-end">
+                              <div class="placeholder placeholder-xs col-8"></div>
+                              <div class="placeholder placeholder-xs col-10"></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar avatar-rounded placeholder"></div>
+                            </div>
+                            <div class="col-7">
+                              <div class="placeholder placeholder-xs col-9"></div>
+                              <div class="placeholder placeholder-xs col-7"></div>
+                            </div>
+                            <div class="col-2 ms-auto text-end">
+                              <div class="placeholder placeholder-xs col-8"></div>
+                              <div class="placeholder placeholder-xs col-10"></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar avatar-rounded placeholder"></div>
+                            </div>
+                            <div class="col-7">
+                              <div class="placeholder placeholder-xs col-9"></div>
+                              <div class="placeholder placeholder-xs col-7"></div>
+                            </div>
+                            <div class="col-2 ms-auto text-end">
+                              <div class="placeholder placeholder-xs col-8"></div>
+                              <div class="placeholder placeholder-xs col-10"></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar avatar-rounded placeholder"></div>
+                            </div>
+                            <div class="col-7">
+                              <div class="placeholder placeholder-xs col-9"></div>
+                              <div class="placeholder placeholder-xs col-7"></div>
+                            </div>
+                            <div class="col-2 ms-auto text-end">
+                              <div class="placeholder placeholder-xs col-8"></div>
+                              <div class="placeholder placeholder-xs col-10"></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- END PAGE BODY -->
+        @include('samples.includes.footer')
+      </div>
+    </div>
+    @include('samples.includes.settings')
+    @include('samples.includes.scripts')
+  </body>
+</html>
