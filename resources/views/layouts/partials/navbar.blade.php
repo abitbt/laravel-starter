@@ -35,30 +35,21 @@
           <div class="nav-item dropdown">
             <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Switch theme" title="Switch theme">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-theme" aria-hidden="true">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
               </svg>
             </a>
             <div class="dropdown-menu dropdown-menu-end">
               <a href="#" class="dropdown-item" data-bs-theme-value="light">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon me-2" aria-hidden="true">
-                  <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                  <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
-                </svg>
+                <x-tabler-sun class="icon me-2" aria-hidden="true" />
                 Light
               </a>
               <a href="#" class="dropdown-item" data-bs-theme-value="dark">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon me-2" aria-hidden="true">
-                  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
-                </svg>
+                <x-tabler-moon class="icon me-2" aria-hidden="true" />
                 Dark
               </a>
               <a href="#" class="dropdown-item" data-bs-theme-value="auto">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon me-2" aria-hidden="true">
-                  <path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z" />
-                  <path d="M7 20h10" />
-                  <path d="M9 16v4" />
-                  <path d="M15 16v4" />
-                </svg>
+                <x-tabler-device-desktop class="icon me-2" aria-hidden="true" />
                 Auto
               </a>
             </div>
@@ -98,24 +89,7 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/') }}">
                 <span class="nav-link-icon d-md-none d-lg-inline-block">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    focusable="false"
-                    class="icon icon-1"
-                  >
-                    <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
-                    <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-                    <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-                  </svg>
+                  <x-tabler-home class="icon" aria-hidden="true" />
                 </span>
                 <span class="nav-link-title">Home</span>
               </a>
@@ -123,23 +97,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span class="nav-link-icon d-md-none d-lg-inline-block">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    focusable="false"
-                    class="icon icon-1"
-                  >
-                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                  </svg>
+                  <x-tabler-info-circle class="icon" aria-hidden="true" />
                 </span>
                 <span class="nav-link-title">About</span>
               </a>
@@ -147,23 +105,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span class="nav-link-icon d-md-none d-lg-inline-block">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    focusable="false"
-                    class="icon icon-1"
-                  >
-                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                    <path d="M3 7l9 6l9 -6" />
-                  </svg>
+                  <x-tabler-mail class="icon" aria-hidden="true" />
                 </span>
                 <span class="nav-link-title">Contact</span>
               </a>

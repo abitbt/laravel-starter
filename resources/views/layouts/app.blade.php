@@ -100,9 +100,7 @@
         @endif
         
         {{-- Flash Messages --}}
-        <div class="page-body">
-          @include('layouts.partials.flash-messages')
-        </div>
+        @include('layouts.partials.flash-messages')
         
         {{-- Main Content --}}
         <main id="content" class="page-body">
@@ -116,29 +114,8 @@
         @endif
       </div>
     </div>
-    
+
     @stack('modals')
-    
-    {{-- Theme Switcher Script --}}
-    <script>
-      window.addEventListener('DOMContentLoaded', () => {
-        const themeButtons = document.querySelectorAll('[data-bs-theme-value]')
-        
-        themeButtons.forEach(button => {
-          button.addEventListener('click', (e) => {
-            e.preventDefault()
-            const theme = button.getAttribute('data-bs-theme-value')
-            localStorage.setItem('theme', theme)
-            
-            if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-              document.documentElement.setAttribute('data-bs-theme', 'dark')
-            } else {
-              document.documentElement.setAttribute('data-bs-theme', theme)
-            }
-          })
-        })
-      })
-    </script>
     
     @yield('scripts')
     @stack('scripts')

@@ -2,13 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/demo', function () {
+    return view('demo');
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/home', function () {
-        return view('home');
+    Route::get('/', function () {
+        return view('home', [
+            'breadcrumbs' => [
+                ['title' => 'Sub Page', 'url' => route('home')],
+                ['title' => 'Current Page', 'url' => ''],
+            ],
+        ]);
     })->name('home');
 
     Route::get('/profile', function () {
