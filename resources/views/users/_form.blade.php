@@ -24,7 +24,8 @@
 @endif
 
 <div class="mb-3">
-  <label class="form-label {{ $user->exists ? '' : 'required' }}">{{ $user->exists ? 'New Password' : 'Password' }}</label>
+  <label
+    class="form-label {{ $user->exists ? '' : 'required' }}">{{ $user->exists ? 'New Password' : 'Password' }}</label>
   <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
     {{ $user->exists ? '' : 'required' }}>
   @error('password')

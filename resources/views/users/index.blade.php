@@ -116,9 +116,8 @@
 
   @foreach ($users as $user)
     @can('delete', $user)
-      <x-modals.delete id="modal-delete-{{ $user->id }}"
-        :message="'Do you really want to delete user &quot;' . $user->name . '&quot;? This action cannot be undone.'"
-        :action="route('users.destroy', $user)" buttonText="Delete user" />
+      <x-modals.delete id="modal-delete-{{ $user->id }}" :message="'Do you really want to delete user &quot;' . $user->name . '&quot;? This action cannot be undone.'" :action="route('users.destroy', $user)"
+        buttonText="Delete user" />
     @endcan
   @endforeach
 @endsection
