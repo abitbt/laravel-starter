@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+  @include('layouts.partials.meta')
+
+  @stack('head')
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+
+<body class="layout-fluid @yield('body-class')" data-bs-theme="auto">
+  <script>
+    // Theme switcher - loads before page render to prevent flash
+    const getStoredTheme = () => localStorage.getItem('theme')
+    const setStoredTheme = theme => localStorage.setItem('theme', theme)
+    const getPreferredTheme = () => {
+      const storedTheme = getStoredTheme()
+      if (storedTheme) return storedTheme
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    }
+    const setTheme = theme => {
+      if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-bs-theme', 'dark')
+      } else {
+        document.documentElement.setAttribute('data-bs-theme', theme)
+      }
+    }
+    setTheme(getPreferredTheme())
+  </script>
+  <a href="#content" class="visually-hidden skip-link">Skip to main content</a>
+  <div class="page">
+    <aside class="navbar navbar-vertical navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu"
+          aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle sidebar navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-brand navbar-brand-autodark py-lg-3">
+          @hasSection('sidebar-brand')
+            @yield('sidebar-brand')
+          @else
+            <a href="{{ url('/') }}" aria-label="{{ config('app.name') }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="110" height="32" viewBox="0 0 232 68"
+                class="navbar-brand-image">
+                <path
+                  d="M64.6 16.2C63 9.9 58.1 5 51.8 3.4 40 1.5 28 1.5 16.2 3.4 9.9 5 5 9.9 3.4 16.2 1.5 28 1.5 40 3.4 51.8 5 58.1 9.9 63 16.2 64.6c11.8 1.9 23.8 1.9 35.6 0C58.1 63 63 58.1 64.6 51.8c1.9-11.8 1.9-23.8 0-35.6zM33.3 36.3c-2.8 4.4-6.6 8.2-11.1 11-1.5.9-3.3.9-4.8.1s-2.4-2.3-2.5-4c0-1.7.9-3.3 2.4-4.1 2.3-1.4 4.4-3.2 6.1-5.3-1.8-2.1-3.8-3.8-6.1-5.3-2.3-1.3-3-4.2-1.7-6.4s4.3-2.9 6.5-1.6c4.5 2.8 8.2 6.5 11.1 10.9 1 1.4 1 3.3.1 4.7zM49.2 46H37.8c-2.1 0-3.8-1-3.8-3s1.7-3 3.8-3h11.4c2.1 0 3.8 1 3.8 3s-1.7 3-3.8 3z"
+                  fill="#066fd1" style="fill: var(--tblr-primary, #066fd1)" />
+                <path
+                  d="M105.8 46.1c.4 0 .9.2 1.2.6s.6 1 .6 1.7c0 .9-.5 1.6-1.4 2.2s-2 .9-3.2.9c-2 0-3.7-.4-5-1.3s-2-2.6-2-5.4V31.6h-2.2c-.8 0-1.4-.3-1.9-.8s-.9-1.1-.9-1.9c0-.7.3-1.4.8-1.8s1.2-.7 1.9-.7h2.2v-3.1c0-.8.3-1.5.8-2.1s1.3-.8 2.1-.8 1.5.3 2 .8.8 1.3.8 2.1v3.1h3.4c.8 0 1.4.3 1.9.8s.8 1.2.8 1.9-.3 1.4-.8 1.8-1.2.7-1.9.7h-3.4v13c0 .7.2 1.2.5 1.5s.8.5 1.4.5c.3 0 .6-.1 1.1-.2.5-.2.8-.3 1.2-.3zm28-20.7c.8 0 1.5.3 2.1.8.5.5.8 1.2.8 2.1v20.3c0 .8-.3 1.5-.8 2.1-.5.6-1.2.8-2.1.8s-1.5-.3-2-.8-.8-1.2-.8-2.1c-.8.9-1.9 1.7-3.2 2.4-1.3.7-2.8 1-4.3 1-2.2 0-4.2-.6-6-1.7-1.8-1.1-3.2-2.7-4.2-4.7s-1.6-4.3-1.6-6.9c0-2.6.5-4.9 1.5-6.9s2.4-3.6 4.2-4.8c1.8-1.1 3.7-1.7 5.9-1.7 1.5 0 3 .3 4.3.8 1.3.6 2.5 1.3 3.4 2.1 0-.8.3-1.5.8-2.1.5-.5 1.2-.7 2-.7zm-9.7 21.3c2.1 0 3.8-.8 5.1-2.3s2-3.4 2-5.7-.7-4.2-2-5.8c-1.3-1.5-3-2.3-5.1-2.3-2 0-3.7.8-5 2.3-1.3 1.5-2 3.5-2 5.8s.6 4.2 1.9 5.7 3 2.3 5.1 2.3zm32.1-21.3c2.2 0 4.2.6 6 1.7 1.8 1.1 3.2 2.7 4.2 4.7s1.6 4.3 1.6 6.9-.5 4.9-1.5 6.9-2.4 3.6-4.2 4.8c-1.8 1.1-3.7 1.7-5.9 1.7-1.5 0-3-.3-4.3-.9s-2.5-1.4-3.4-2.3v.3c0 .8-.3 1.5-.8 2.1-.5.6-1.2.8-2.1.8s-1.5-.3-2.1-.8c-.5-.5-.8-1.2-.8-2.1V18.9c0-.8.3-1.5.8-2.1.5-.6 1.2-.8 2.1-.8s1.5.3 2.1.8c.5.6.8 1.3.8 2.1v10c.8-1 1.8-1.8 3.2-2.5 1.3-.7 2.8-1 4.3-1zm-.7 21.3c2 0 3.7-.8 5-2.3s2-3.5 2-5.8-.6-4.2-1.9-5.7-3-2.3-5.1-2.3-3.8.8-5.1 2.3-2 3.4-2 5.7.7 4.2 2 5.8c1.3 1.6 3 2.3 5.1 2.3zm23.6 1.9c0 .8-.3 1.5-.8 2.1s-1.3.8-2.1.8-1.5-.3-2-.8-.8-1.3-.8-2.1V18.9c0-.8.3-1.5.8-2.1s1.3-.8 2.1-.8 1.5.3 2 .8.8 1.3.8 2.1v29.7zm29.3-10.5c0 .8-.3 1.4-.9 1.9-.6.5-1.2.7-2 .7h-15.8c.4 1.9 1.3 3.4 2.6 4.4 1.4 1.1 2.9 1.6 4.7 1.6 1.3 0 2.3-.1 3.1-.4.7-.2 1.3-.5 1.8-.8.4-.3.7-.5.9-.6.6-.3 1.1-.4 1.6-.4.7 0 1.2.2 1.7.7s.7 1 .7 1.7c0 .9-.4 1.6-1.3 2.4-.9.7-2.1 1.4-3.6 1.9s-3 .8-4.6.8c-2.7 0-5-.6-7-1.7s-3.5-2.7-4.6-4.6-1.6-4.2-1.6-6.6c0-2.8.6-5.2 1.7-7.2s2.7-3.7 4.6-4.8 3.9-1.7 6-1.7 4.1.6 6 1.7 3.4 2.7 4.5 4.7c.9 1.9 1.5 4.1 1.5 6.3zm-12.2-7.5c-3.7 0-5.9 1.7-6.6 5.2h12.6v-.3c-.1-1.3-.8-2.5-2-3.5s-2.5-1.4-4-1.4zm30.3-5.2c1 0 1.8.3 2.4.8.7.5 1 1.2 1 1.9 0 1-.3 1.7-.8 2.2-.5.5-1.1.8-1.8.7-.5 0-1-.1-1.6-.3-.2-.1-.4-.1-.6-.2-.4-.1-.7-.1-1.1-.1-.8 0-1.6.3-2.4.8s-1.4 1.3-1.9 2.3-.7 2.3-.7 3.7v11.4c0 .8-.3 1.5-.8 2.1-.5.6-1.2.8-2.1.8s-1.5-.3-2.1-.8c-.5-.6-.8-1.3-.8-2.1V28.8c0-.8.3-1.5.8-2.1.5-.6 1.2-.8 2.1-.8s1.5.3 2.1.8c.5.6.8 1.3.8 2.1v.6c.7-1.3 1.8-2.3 3.2-3 1.3-.7 2.8-1 4.3-1z"
+                  fill-rule="evenodd" clip-rule="evenodd" fill="#4a4a4a" />
+              </svg>
+            </a>
+          @endif
+        </div>
+
+        <div class="navbar-collapse collapse" id="sidebar-menu">
+          <div class="navbar-nav pt-lg-3">
+            @hasSection('sidebar')
+              @yield('sidebar')
+            @else
+              <nav aria-label="Primary">
+                <ul class="nav nav-pills nav-sm flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/') }}">
+                      <span class="nav-link-icon d-md-none d-lg-inline-block">
+                        <x-tabler-home class="icon" aria-hidden="true" />
+                      </span>
+                      <span class="nav-link-title">Home</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-link-icon d-md-none d-lg-inline-block">
+                        <x-tabler-info-circle class="icon" aria-hidden="true" />
+                      </span>
+                      <span class="nav-link-title">About</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-link-icon d-md-none d-lg-inline-block">
+                        <x-tabler-mail class="icon" aria-hidden="true" />
+                      </span>
+                      <span class="nav-link-title">Contact</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            @endif
+
+            @hasSection('sidebar-footer')
+              <div class="border-top mt-4 pt-3">
+                @yield('sidebar-footer')
+              </div>
+            @else
+              <div class="border-top d-none d-lg-block mt-4 pt-3">
+                <div class="nav-item dropdown mb-3">
+                  <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1"
+                    aria-label="Switch theme" title="Switch theme">
+                    <x-tabler-sun-moon class="icon icon-theme" aria-hidden="true" />
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item" data-bs-theme-value="light">
+                      <x-tabler-sun class="icon me-2" aria-hidden="true" />
+                      Light
+                    </a>
+                    <a href="#" class="dropdown-item" data-bs-theme-value="dark">
+                      <x-tabler-moon class="icon me-2" aria-hidden="true" />
+                      Dark
+                    </a>
+                    <a href="#" class="dropdown-item" data-bs-theme-value="auto">
+                      <x-tabler-device-desktop class="icon me-2" aria-hidden="true" />
+                      Auto
+                    </a>
+                  </div>
+                </div>
+                @auth
+                  <div class="nav-item dropdown">
+                    <a href="#" class="nav-link d-flex align-items-center p-0" data-bs-toggle="dropdown"
+                      aria-label="Open user menu">
+                      <span class="avatar avatar-sm me-2"
+                        style="background-image: url(https://ui-avatars.com/api/?name={{ urlencode(auth()->user()->name) }}&background=066fd1&color=fff)"></span>
+                      <div class="flex-fill">
+                        <div>{{ auth()->user()->name }}</div>
+                        <div class="small text-secondary mt-1">{{ auth()->user()->email }}</div>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-arrow">
+                      <a href="{{ route('profile.show') }}" class="dropdown-item">Profile</a>
+                      <div class="dropdown-divider"></div>
+                      <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit" class="dropdown-item text-danger">Logout</button>
+                      </form>
+                    </div>
+                  </div>
+                @else
+                  <a href="{{ route('login') }}" class="btn btn-primary w-100">
+                    Login
+                  </a>
+                @endauth
+              </div>
+            @endif
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    @include('layouts.partials.navbar', [
+        'navbarClass' => 'navbar navbar-expand-md d-none d-lg-flex d-print-none',
+    ])
+
+    <div class="page-wrapper">
+      @include('layouts.partials.breadcrumbs')
+      @if (!isset($hideHeader))
+        @hasSection('hide-header')
+          {{-- Header hidden by section --}}
+        @else
+          <div class="page-header d-print-none">
+            <div class="container-xl">
+              <div class="row g-2 align-items-center">
+                <div class="col">
+                  @hasSection('pretitle')
+                    <div class="page-pretitle">
+                      @yield('pretitle')
+                    </div>
+                  @else
+                    @isset($pretitle)
+                      <div class="page-pretitle">
+                        {{ $pretitle }}
+                      </div>
+                    @endisset
+                  @endif
+
+                  <h1 class="page-title">
+                    @yield('page-title', $pageTitle ?? config('app.name'))
+                  </h1>
+
+                  @hasSection('description')
+                    <div class="text-secondary mt-1">
+                      @yield('description')
+                    </div>
+                  @else
+                    @isset($description)
+                      <div class="text-secondary mt-1">
+                        {{ $description }}
+                      </div>
+                    @endisset
+                  @endif
+                </div>
+
+                @hasSection('actions')
+                  <div class="d-print-none col-auto ms-auto">
+                    <div class="btn-list">
+                      @yield('actions')
+                    </div>
+                  </div>
+                @else
+                  @isset($actions)
+                    <div class="d-print-none col-auto ms-auto">
+                      <div class="btn-list">
+                        {!! $actions !!}
+                      </div>
+                    </div>
+                  @endisset
+                @endif
+              </div>
+
+              @hasSection('tabs')
+                <div class="row mt-3">
+                  <div class="col-12">
+                    @yield('tabs')
+                  </div>
+                </div>
+              @endif
+            </div>
+          </div>
+        @endif
+      @endif
+
+      @include('layouts.partials.flash-messages')
+
+      @php
+        $hasRightSidebar = $__env->hasSection('right-sidebar');
+        $containerClass = trim($__env->yieldContent('layout-container-class', ''));
+        if ($containerClass === '') {
+            $containerClass = 'container-xl';
+        }
+        $rowClass = trim($__env->yieldContent('layout-row-class', ''));
+        if ($rowClass === '') {
+            $rowClass = 'row g-4';
+        }
+        $contentColClass = trim($__env->yieldContent('layout-content-col-class', ''));
+        if ($contentColClass === '') {
+            $contentColClass = $hasRightSidebar ? 'col-12 col-xl-8 col-xxl-9' : 'col-12';
+        }
+        $sidebarColClass = trim($__env->yieldContent('layout-sidebar-col-class', ''));
+        if ($sidebarColClass === '') {
+            $sidebarColClass = 'col-12 col-xl-4 col-xxl-3';
+        }
+        $sidebarLabel = trim($__env->yieldContent('right-sidebar-aria-label', ''));
+        if ($sidebarLabel === '') {
+            $sidebarLabel = 'Secondary content';
+        }
+      @endphp
+
+      <main id="content" class="page-body">
+        <div class="{{ $containerClass }}">
+          @if ($hasRightSidebar)
+            <div class="{{ $rowClass }}">
+              <div class="{{ $contentColClass }}">
+                @yield('content')
+              </div>
+              <aside class="{{ $sidebarColClass }}" aria-label="{{ $sidebarLabel }}">
+                @yield('right-sidebar')
+              </aside>
+            </div>
+          @else
+            @yield('content')
+          @endif
+        </div>
+      </main>
+
+      @hasSection('footer')
+        @yield('footer')
+      @else
+        @include('layouts.partials.footer')
+      @endif
+    </div>
+  </div>
+
+  @stack('modals')
+
+  @yield('scripts')
+  @stack('scripts')
+</body>
+
+</html>

@@ -1,4 +1,7 @@
-<header class="navbar navbar-expand-md d-print-none">
+@php
+  $navbarClass = $navbarClass ?? 'navbar navbar-expand-md d-print-none';
+@endphp
+<header class="{{ $navbarClass }}">
   <div class="container-xl">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
       aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle primary navigation">
@@ -24,12 +27,7 @@
         <div class="nav-item dropdown">
           <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Switch theme"
             title="Switch theme">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="icon icon-theme" aria-hidden="true">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
-            </svg>
+            <x-tabler-sun-moon class="icon icon-theme" aria-hidden="true" />
           </a>
           <div class="dropdown-menu dropdown-menu-end">
             <a href="#" class="dropdown-item" data-bs-theme-value="light">
@@ -87,6 +85,16 @@
               <span class="nav-link-title">Home</span>
             </a>
           </li>
+          @auth
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('users.index') }}">
+                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                  <x-tabler-users class="icon" aria-hidden="true" />
+                </span>
+                <span class="nav-link-title">Users</span>
+              </a>
+            </li>
+          @endauth
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span class="nav-link-icon d-md-none d-lg-inline-block">

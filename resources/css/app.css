@@ -1,1 +1,26 @@
 @import '@tabler/core/dist/css/tabler.min.css';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent modal from shifting page content */
+body.modal-open {
+  overflow: hidden;
+  padding-right: 0 !important;
+}
+
+.page {
+  margin: 0;
+}
+
+header.navbar {
+  border-radius: 0;
+  margin: 0;
+}
+
+footer.footer {
+  border-radius: 0;
+  margin: 0;
+}

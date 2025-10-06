@@ -2,6 +2,9 @@
 /node_modules
 /vendor
 
+# Samples
+/resources/views/samples
+
 # Build outputs
 /public/build
 /public/hot

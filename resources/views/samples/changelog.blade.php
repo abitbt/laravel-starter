@@ -37,7 +37,8 @@
                   <h3>Patch Changes</h3>
                   <ul>
                     <li>6c4dd36: Update class names from <code>*-left</code>, <code>*-right</code> to
-                      <code>*-start</code>, <code>*-end</code></li>
+                      <code>*-start</code>, <code>*-end</code>
+                    </li>
                     <li>6fec73a: Fix relative line heights in buttons</li>
                     <li>db6200a: Remove <code>license_key</code> option from HugeRTE init object</li>
                     <li>e96f055: Add different favicon to development environment</li>
@@ -262,7 +263,8 @@
                     <li>0e5b44a: Fix <code>color</code> of disabled <code>nav-link</code> in <code>nav-bordered</code>
                     </li>
                     <li>65c1300: Fix the <code>z-index</code> value of the <code>nav-tab</code> inside
-                      <code>card-tab</code> #1933</li>
+                      <code>card-tab</code> #1933
+                    </li>
                     <li>8552a46: Switch from <code>npm</code> to <code>pnpm</code> for faster package installation</li>
                     <li>4a9e40d: Increase contrast of active <code>dropdown-item</code> in vertical layout</li>
                     <li>17ebdf4: Update documentation for Tabler components</li>
@@ -617,7 +619,8 @@
                     <li>fixes update map on resize</li>
                     <li>docs improvement</li>
                     <li>replace <code>badge</code> with <code>status-dot</code> in
-                      <code>navbar-notifications.html</code></li>
+                      <code>navbar-notifications.html</code>
+                    </li>
                     <li>map tooltip fixes</li>
                   </ul>
                   <h2><code>1.0.0-beta7</code> - 2022-02-05</h2>

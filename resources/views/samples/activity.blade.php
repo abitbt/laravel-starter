@@ -285,7 +285,8 @@
                         </div>
                         <div class="col">
                           <div class="text-truncate"><strong>Arlie Armstead</strong> sent a review request to
-                            <strong>Amanda Blake</strong></div>
+                            <strong>Amanda Blake</strong>
+                          </div>
                           <div class="text-secondary">2 days ago</div>
                         </div>
                       </div>
@@ -298,7 +299,8 @@
                         </div>
                         <div class="col">
                           <div class="text-truncate"><strong>Tessie Curzon</strong> posted a photo from her vacation in
-                            <strong>Tuscany</strong></div>
+                            <strong>Tuscany</strong>
+                          </div>
                           <div class="text-secondary">now</div>
                         </div>
                       </div>
@@ -423,7 +425,8 @@
                         </div>
                         <div class="col">
                           <div class="text-truncate"><strong>Merrily Garforth</strong> posted a job listing:
-                            <strong>Frontend Developer</strong></div>
+                            <strong>Frontend Developer</strong>
+                          </div>
                           <div class="text-secondary">now</div>
                         </div>
                       </div>
@@ -541,7 +544,8 @@
                         </div>
                         <div class="col">
                           <div class="text-truncate"><strong>Emmott Dowsett</strong> published a new blog post:
-                            <strong>Dark Mode for All</strong></div>
+                            <strong>Dark Mode for All</strong>
+                          </div>
                           <div class="text-secondary">2 days ago</div>
                         </div>
                       </div>

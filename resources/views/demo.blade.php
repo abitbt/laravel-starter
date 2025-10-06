@@ -781,7 +781,8 @@
         </div>
         <div class="modal-body">
           <p>This is a demonstration of the modal system. Modals are added using the
-            <code>@@push('modals')</code> directive.</p>
+            <code>@@push('modals')</code> directive.
+          </p>
           <p class="text-secondary mb-0">You can have as many modals as you need, and they can be triggered from anywhere
             in your page.</p>
         </div>

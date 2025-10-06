@@ -2450,8 +2450,7 @@ AA
                         <div class="col-md-12">
                           <div class="mb-0 mb-3">
                             <label class="form-label">About Me</label>
-                            <textarea rows="5" class="form-control"
-                              placeholder="Here can be your description" value="Mike">
+                            <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">
 Oh so, your weak rhyme
 You doubt I'll bother, reading into it
 I'll probably won't, left to my own devices
@@ -2652,12 +2651,12 @@ But that's the difference in our opinions.</textarea>
   </script>
   <script>
     /*
-  	This script handles the theme settings offcanvas functionality
-  	It saves the selected settings to localStorage and applies them to the document
-  	It also updates the URL with the selected settings as query parameters
-  	It also has a reset button to clear all settings and revert to default
-  	This is just a demo script to show how to implement theme settings. You can modify it as needed.
-  	*/
+          	This script handles the theme settings offcanvas functionality
+          	It saves the selected settings to localStorage and applies them to the document
+          	It also updates the URL with the selected settings as query parameters
+          	It also has a reset button to clear all settings and revert to default
+          	This is just a demo script to show how to implement theme settings. You can modify it as needed.
+          	*/
     document.addEventListener("DOMContentLoaded", function() {
       var themeConfig = {
         theme: "light",

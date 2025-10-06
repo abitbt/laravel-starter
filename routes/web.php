@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/demo', function () {
@@ -19,12 +20,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/profile', function () {
         return view('profile.show');
     })->name('profile.show');
+
+    Route::resource('users', UserController::class);
 });
 
 Route::get('/tabler', function () {
     return view('samples.accordion');
-});
-
-Route::get('/components', function () {
-    return view('components-demo');
 });
