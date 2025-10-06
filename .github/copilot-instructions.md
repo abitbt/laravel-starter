@@ -1,7 +1,3 @@
----
-applyTo: '**'
----
-
 # Laravel Starter Rules
 
 ## Stack
