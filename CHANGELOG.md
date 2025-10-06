@@ -7,45 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Nothing yet.
+
+## [1.1.0] - 2025-10-06
+
 ### Added
-- Initial release of Laravel Starter
-- Laravel 12 framework integration
-- Complete authentication system via Laravel Fortify
-  - Login/Register functionality
-  - Password reset
-  - Two-factor authentication (2FA)
-  - Profile management
-- Tabler UI integration with light/dark/auto theme switcher
-- Alpine.js for reactive components
-- Pest v4 testing framework
-- Laravel Boost development CLI tools
-- Code formatting with Pint (PHP) and Prettier (Blade/JS/CSS)
-- Vite for fast asset bundling
-- Concurrent development environment (`composer run dev`)
-- SQLite database configuration (default)
-- Comprehensive documentation for developers and AI agents
-- Pre-configured authentication views
-- Example routes and views
-- Database migrations and factories
+- GitHub Actions CI/CD: tests.yml and code-quality.yml
+- Project documentation: CONTRIBUTING.md, SECURITY.md, ENV.md, DEPLOYMENT.md
+- LICENSE (MIT)
+- Pint configuration (pint.json)
+- API routes file (routes/api.php) and API route registration
+- ExampleController for reference patterns
+- UserSeeder for example data
+- Standard Laravel directories scaffolded: Console/Commands, Events, Listeners, Notifications, Mail
 
 ### Changed
-- N/A
-
-### Deprecated
-- N/A
+- README: refined project description; added storage:link guidance; linked new docs
+- composer.json and package.json: updated descriptions
+- bootstrap/app.php: registered API routes
+- tests/Pest.php: enabled RefreshDatabase by default for Feature tests
 
 ### Removed
-- N/A
-
-### Fixed
-- N/A
-
-### Security
-- CSRF protection on all routes
-- Bcrypt password hashing
-- Rate limiting on authentication routes (5 attempts/minute)
-- SQL injection prevention via Eloquent ORM
-- XSS protection via Blade auto-escaping
+- .gitkeep placeholders from empty app subdirectories
 
 ## [1.0.0] - 2025-10-06
 
@@ -53,6 +36,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial stable release
 
 ---
-
-[Unreleased]: https://github.com/aBit-Soft/laravel-starter/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/aBit-Soft/laravel-starter/releases/tag/v1.0.0
+[Unreleased]: https://github.com/abitbt/laravel-starter/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/abitbt/laravel-starter/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/abitbt/laravel-starter/releases/tag/v1.0.0
