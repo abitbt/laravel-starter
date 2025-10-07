@@ -90,7 +90,7 @@ class UserController extends Controller
             'email' => $request->validated('email'),
         ];
 
-        if ($request->filled('password')) {
+        if ($request->validated('password')) {
             $data['password'] = Hash::make($request->validated('password'));
         }
 
