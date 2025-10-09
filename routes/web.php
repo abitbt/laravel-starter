@@ -14,6 +14,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('users', UserController::class);
 });
 
-Route::get('/tabler', function () {
-    return view('samples.accordion');
+Route::get('/demo', function () {
+    return view('demo');
 });
+
+// Login as Admin
+if (config('app.env') == 'local' && config('app.debug')) {
+    Route::get('/loginas/admin', function () {
+        auth()->loginUsingId(1);
+        return redirect()->route('home');
+    });
+}

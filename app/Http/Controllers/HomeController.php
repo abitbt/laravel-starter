@@ -8,11 +8,6 @@ class HomeController extends Controller
 {
     public function index(): View
     {
-        return view('home', [
-            'breadcrumbs' => [
-                ['title' => 'Sub Page', 'url' => route('home')],
-                ['title' => 'Current Page', 'url' => ''],
-            ],
-        ]);
+        return view('home');
     }
 }

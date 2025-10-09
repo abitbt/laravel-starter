@@ -1,6 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.app-vertical')
 
 @section('page-title', 'Users')
+
+@section('breadcrumbs')
+  <li class="breadcrumb-item active" aria-current="page">
+    Users
+  </li>
+@endsection
 
 @section('content')
   <div class="container-xl">
